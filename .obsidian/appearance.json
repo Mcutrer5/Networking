@@ -1,1 +1,6 @@
-{}
+{
+  "accentColor": "#db8433",
+  "cssTheme": "Obsidian gruvbox",
+  "textFontFamily": "FiraMono Nerd Font",
+  "monospaceFontFamily": "FiraMono Nerd Font Mono"
+}
