@@ -1,6 +1,8 @@
 {
   "accentColor": "#db8433",
-  "cssTheme": "Obsidian gruvbox",
+  "cssTheme": "Ukiyo",
   "textFontFamily": "FiraMono Nerd Font",
-  "monospaceFontFamily": "FiraMono Nerd Font Mono"
+  "monospaceFontFamily": "FiraMono Nerd Font Mono",
+  "theme": "moonstone",
+  "baseFontSize": 17
 }
