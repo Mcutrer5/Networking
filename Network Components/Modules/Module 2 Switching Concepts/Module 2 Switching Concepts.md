@@ -4,7 +4,7 @@
 ![[Cisco 1.png]]
 
 ---
-# *Table of Contents*
+# *Table of Contents* 📚
 - [[Module 2 Switching Concepts |Module 2 Switching Concepts]]....................................
 	- **2.1 Frame Forwarding**.......................................
 		- [[2.1.1 Switching in Networking]]..........................
@@ -20,4 +20,4 @@
 
 ---
 
-[[Module 1 Basic Device Configuration |◀ Module 1]] | [[Module 2 Switching Concepts |Module 3 ▶]] 
+[[Module 1 Basic Device Configuration |◀ Module 1]]         |         [[Network Components |Home 🏠]]         |         [[Module 2 Switching Concepts |Module 3 ▶]] 

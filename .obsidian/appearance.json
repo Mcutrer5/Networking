@@ -6,6 +6,7 @@
   "theme": "moonstone",
   "baseFontSize": 15,
   "enabledCssSnippets": [
-    "extended-colorschemes"
+    "extended-colorschemes",
+    "TableOfContents"
   ]
 }

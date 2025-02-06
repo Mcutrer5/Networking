@@ -4,7 +4,7 @@
 ![[Cisco 1.png]]
 
 ---
-# *Table of Contents*
+# *Table of Contents* 📚
 - [[Module 1 Basic Device Configuration]]...........................
 	- **1.1 Configure a Switch with Initial Settings**..............
 		- [[1.1.1 Switch Boot Sequence]]............................
@@ -44,4 +44,4 @@
 
 --- 
 
-[[Network Components |◀ Home]] | [[Module 2 Switching Concepts |Module 2 ▶]] 
+[[Network Components|◀ Home 🏠]]            |                    |            [[Module 2 Switching Concepts |Module 2 ▶]] 

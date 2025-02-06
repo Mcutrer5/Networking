@@ -1,7 +1,7 @@
 ![[Cisco.png]]
 
 ---
-# *Table of Contents*
+# *Table of Contents* 📚
 - [[Module 2 Switching Concepts |Module 2 Switching Concepts]]....................................
 	- **2.1 OSPF Router ID**.........................................
 		- [[2.1.1 OSPF Reference Topology]]..........................
@@ -50,4 +50,4 @@
 
 ---
 
-[[Module 1 Single-Area OSPFv2 Concepts|◀ Module 1]] | [[Module 2 Switching Concepts |Module 3 ▶]] 
+[[Module 1 Single-Area OSPFv2 Concepts|◀ Module 1]]         |         [[Network Implementation |Home 🏠]]         |         [[Module 3 ▶]] 
