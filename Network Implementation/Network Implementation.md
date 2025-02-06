@@ -2,9 +2,9 @@
 # **Network Implementation Home** ⌨
 ---
 
-Instructor: 
-Syllabus:
-Links:
+Instructor: Gabe Bozeman
+Syllabus: 
+Links: 
 Domain: IST
 Sub-domain: Networking 
 
@@ -16,8 +16,8 @@ Sub-domain: Networking
 # **Notes Outline** 📑
 ---
 
-- [[1.1.1 Switch Boot Sequence|Module 1]]
-- [[2.1.1 OSPF Reference Topology|Module 2]]
+- [[Module 1 Single-Area OSPFv2 Concepts|Module 1]]
+- [[Module 2 Single-Area OSPFv2 Configuration|Module 2]]
 
 
 
