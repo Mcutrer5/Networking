@@ -20,4 +20,4 @@
 
 ---
 
-[[Module 1 Basic Device Configuration |◀ Module 1]]         |         [[Network Components |Home 🏠]]         |         [[Module 2 Switching Concepts |Module 3 ▶]] 
+[[Module 1 Basic Device Configuration |◀ Module 1]]         |         [[Network Components |Home 🏠]]         |         [[Module 3 VLANs|Module 3 ▶]] 

@@ -16,7 +16,7 @@ Sub-domain: Networking
 # **Notes Outline** 📑
 ---
 
-[[Module 1 Basic Device Configuration|Module 1]]         |         [[Module 2 Switching Concepts|Module 2]]         |         [[Module 3]]
+[[Module 1 Basic Device Configuration|Module 1]]         |         [[Module 2 Switching Concepts|Module 2]]         |         [[Module 3 VLANs|Module 3]]
 
 
 
