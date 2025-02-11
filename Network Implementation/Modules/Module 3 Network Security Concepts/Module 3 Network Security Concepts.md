@@ -17,4 +17,4 @@
 
 ---
 
-[[Module 1 Basic Device Configuration |◀ Module 2]] | [[Module 2 Switching Concepts |Module 4 ▶]] 
+[[Module 1 Basic Device Configuration |◀ Module 2]] | [[Module 3 Network Security Concepts | 🏠 Home]] | [[Module 2 Switching Concepts |Module 4 ▶]] 

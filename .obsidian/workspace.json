@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Components/Modules/Module 3 VLANs.md",
-                "mode": "preview",
+                "file": "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation/4.2.6 Router-on-a-Stick Inter-VLAN Routing Verification.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Module 3 VLANs"
+              "title": "4.2.6 Router-on-a-Stick Inter-VLAN Routing Verification"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 457
+    "width": 256
   },
   "right": {
     "id": "80ff615116f264de",
@@ -177,41 +177,45 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4226ffe55947f93b",
+  "active": "dec863c3fce1bd12",
   "lastOpenFiles": [
-    "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks/3.4.2 Trunk Configuration Example.md",
-    "Network Components/Modules/Module 3 VLANs.md",
-    "Network Components/Network Components.md",
-    "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks/3.4.4 Reset the Trunk to the Default State.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation/4.2.5 Verify Connectivity Between PC1 and PC2.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation/4.2.6 Router-on-a-Stick Inter-VLAN Routing Verification.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation/4.2.4 R1 Subinterface Configuration.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation/4.2.3 S2 VLAN and Trunking Configuration.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation/4.2.2 S1 VLAN and Trunking Configuration.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation/4.2.1 Router-on-a-Stick Scenario.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.1 Inter-VLAN Routing Operation/4.1.4 Inter-VLAN Routing on a Layer 3 Switch.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.2 Router-on-a-Stick Inter-VLAN Routing Operation",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.1 Inter-VLAN Routing Operation/Untitled.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.1 Inter-VLAN Routing Operation/4.1.3 Router-on-a-Stick Inter-VLAN Routing.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.1 Inter-VLAN Routing Operation/4.1.2 Legacy Inter-VLAN Routing.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.1 Inter-VLAN Routing Operation/Untitled",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.1 Inter-VLAN Routing Operation/4.1.1 What is Inter-VLAN Routing.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/Module 4 Inter-VLAN Routing.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.1 Inter-VLAN Routing Operation",
+    "Network Components/Modules/Module 3 VLANs/3.5 Dynamic Trunking Protocol/3.5.4 Verify DTP Mode.md",
+    "Network Components/Modules/Module 4 Inter-VLAN Routing",
+    "Network Components/Modules/Module 3 VLANs/3.5 Dynamic Trunking Protocol/3.5.3 Results of a DTP Configuration.md",
+    "Network Components/Modules/Module 3 VLANs/3.5 Dynamic Trunking Protocol/3.5.2 Negotiated Interface Modes.md",
     "Network Components/Modules/Module 3 VLANs/3.5 Dynamic Trunking Protocol/3.5.1 Introduction to DTP.md",
+    "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks/3.4.4 Reset the Trunk to the Default State.md",
     "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks/3.4.3 Verify Trunk Configuration.md",
-    "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks/3.4.1 Trunk Configuration Commands.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.10 Delete VLANs.md",
+    "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks/3.4.2 Trunk Configuration Example.md",
     "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.9 Change VLAN Port Membership.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.8 Verify VLAN Information.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.7 Data and Voice VLAN Example.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.6 Data and Voice VLANs.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.5 VLAN Port Assignment Example.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.4 VLAN Port Assignment Commands.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.3 VLAN Creation Example.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.2 VLAN Creation Commands.md",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/3.3.1 VLAN Ranges on Catalyst Switches.md",
-    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/3.2.4 VLAN Identification with a Tag.md",
+    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/3.2.1 Defining VLAN Trunks.md",
+    "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/3.1.3 Types of VLANs.md",
+    "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/3.1.1 VLAN Definitions.md",
+    "Network Implementation/Modules/Module 1 Single-Area OSPFv2 Concepts/Module 1 Single-Area OSPFv2 Concepts.md",
+    "Network Implementation/Modules/Module 1 Single-Area OSPFv2 Concepts/1.1 OSPF Features and Characteristics/1.1.1 Introduction to OSPF.md",
     "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks/Images/3.4.2.png",
     "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/Images/3.3.6.png",
     "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/Images/3.3.5.png",
     "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/Images/3.3.3.png",
-    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/3.2.6 Voice VLAN Tagging.md",
-    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/3.2.5 Native VLANs and 802.1Q Tagging.md",
-    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/3.2.3 Network with VLANs.md",
-    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/3.2.2 Network without VLANs.md",
-    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/3.2.1 Defining VLAN Trunks.md",
-    "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/3.1.1 VLAN Definitions.md",
     "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/Images/3.2.5.png",
     "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/Images/3.2.4.png",
     "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/Images/3.2.1.png",
-    "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/3.1.3 Types of VLANs.md",
-    "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/3.1.2 Benefits of a VLAN Design.md",
     "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/Images/3.1.1.png",
     "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/Images/3.1.3.png",
     "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/Images/3.1.2.png",
@@ -221,10 +225,6 @@
     "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration/Images",
     "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment/Images",
     "Network Components/Modules/Module 3 VLANs/3.1 Overview of VLANs/Images",
-    "Network Components/Modules/Module 3 VLANs/3.5 Dynamic Trunking Protocol",
-    "Network Components/Modules/Module 3 VLANs/3.4 VLAN Trunks",
-    "Network Components/Modules/Module 3 VLANs/3.3 VLAN Configuration",
-    "Network Components/Modules/Module 3 VLANs/3.2 VLANs in a Multi-Switched Environment",
     "Untitled.canvas"
   ]
 }

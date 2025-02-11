@@ -28,4 +28,4 @@
 
 ---
 
-[[Module 2 Switching Concepts|◀ Module 2]]         |         [[Network Components |Home 🏠]]         |         [[Module 4 |Module 4 ▶]]
+[[Module 2 Switching Concepts|◀ Module 2]]         |         [[Network Components |Home 🏠]]         |         [[Module 4 Inter-VLAN Routing|Module 4 ▶]]
