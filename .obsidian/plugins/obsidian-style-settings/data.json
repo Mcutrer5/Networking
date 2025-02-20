@@ -111,5 +111,9 @@
   "anuppuccin-theme-settings@@callout-title-opacity": 0.1,
   "anuppuccin-theme-settings@@anp-callout-fold-position": "1",
   "anuppuccin-theme-settings@@ctp-custom-subtext0@@light": "#453866",
-  "anuppuccin-theme-settings@@ctp-custom-subtext0@@dark": "#9F88C9"
+  "anuppuccin-theme-settings@@ctp-custom-subtext0@@dark": "#9F88C9",
+  "shiba-theme-settings@@shib-hb-select": "shiba-hb-style2",
+  "shiba-theme-settings@@translucent-pane-style-settings": "setting-style-traditional",
+  "shiba-theme-settings@@shib-transparent-setting-panel": false,
+  "shiba-theme-settings@@folder-style-change-options-colorful": "shiba-color-folder-default"
 }
