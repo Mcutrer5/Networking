@@ -4,7 +4,7 @@
   "textFontFamily": "FiraMono Nerd Font",
   "monospaceFontFamily": "FiraMono Nerd Font Mono",
   "theme": "moonstone",
-  "baseFontSize": 15,
+  "baseFontSize": 12,
   "enabledCssSnippets": [
     "extended-colorschemes",
     "TableOfContents"

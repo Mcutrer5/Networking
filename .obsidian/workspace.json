@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Read Me.md",
+                "file": "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/5.1.2 Numbered Standard IPv4 ACL Syntax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Read Me"
+              "title": "5.1.2 Numbered Standard IPv4 ACL Syntax"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282
+    "width": 251
   },
   "right": {
     "id": "80ff615116f264de",
@@ -177,8 +177,23 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "878ee9d428183ba2",
+  "active": "dec863c3fce1bd12",
   "lastOpenFiles": [
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/Images/5.1.6.png",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/Images/5.1.5.png",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/5.1.1 Create an ACL.md",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/5.1.6 Named Standard IPv4 ACL Example.md",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/Untitled.md",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/5.1.5 Numbered Standard IPv4 ACL Example.md",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/5.1.4 Apply a Standard IPv4 ACL.md",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/5.1.3 Named Standard IPv4 ACL Syntax.md",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/5.1.2 Numbered Standard IPv4 ACL Syntax.md",
+    "Network Implementation/Modules/Module 5/5.1 Configure Standard IPv4 ACLs/Images",
+    "Network Implementation/Modules/Module 5/Module 5 Configure Standard IPv4 ACLs.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/Module 3 Network Security Concepts.md",
+    "Network Components/Modules/Modules 5-6 Study Guide.md",
+    "Network Components/Modules/Modules 1-4 Study Guide.md",
+    "Read Me.md",
     "Network Components/Modules/Module 5 STP Concepts/5.3 Evolution of STP/5.3.5 Alternatives to STP.md",
     "Network Components/Modules/Module 5 STP Concepts/5.3 Evolution of STP/Images/5.3.5_3.png",
     "Network Components/Modules/Module 5 STP Concepts/5.3 Evolution of STP/Images/5.3.5_2.png",
@@ -197,23 +212,10 @@
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/Images/5.2.9.png",
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.8 Elect a Root Port from Multiple Equal-Cost Paths.md",
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/Images/5.2.8_3.png",
-    "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/Images/5.2.8_2.png",
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.7 4. Elect Alternate (Blocked) Ports.md",
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.1 Steps to a Loop-Free Topology.md",
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.2 1. Elect the Root Bridge.md",
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.3 Impact of Default BIDs.md",
-    "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.4 Determine the Root Path Cost.md",
-    "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.5 2. Elect the Root Ports.md",
-    "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations/5.2.6 3. Elect Designated Ports.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.7 TCP and UDP Vulnerabilities/3.7.2 TCP Services.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.3 Firewalls.md",
-    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/4.3.1 Layer 3 Switch Inter-VLAN Routing.md",
-    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/4.3.2 Layer 3 Switch Scenario.md",
-    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/4.3.3 Layer 3 Switch Configuration.md",
-    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/4.3.4 Layer 3 Switch Inter-VLAN Routing Verification.md",
-    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/4.3.5 Routing on a Layer 3 Switch.md",
-    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/4.3.6 Routing Configuration on a Layer 3 Switch.md",
-    "Network Components/Modules/Module 4 Inter-VLAN Routing/4.4 Common Inter-VLAN Issues/4.4.3 Missing VLANs.md",
     "Network Components/Modules/Module 4 Inter-VLAN Routing/4.4 Common Inter-VLAN Issues/Images",
     "Network Components/Modules/Module 4 Inter-VLAN Routing/4.4 Common Inter-VLAN Issues",
     "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/Images",
@@ -223,7 +225,6 @@
     "Network Components/Modules/Module 5 STP Concepts/5.2 STP Operations",
     "Network Components/Modules/Module 5 STP Concepts/5.1 Purpose of STP/Images",
     "Network Components/Modules/Module 5 STP Concepts/5.1 Purpose of STP",
-    "Network Components/Modules/Module 5 STP Concepts",
     "Untitled.canvas"
   ]
 }
