@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.11 Verify Extended ACLs.md",
+                "file": "Network Components/Network Components.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5.4.11 Verify Extended ACLs"
+              "title": "Network Components"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 249.5
+    "width": 342
   },
   "right": {
     "id": "80ff615116f264de",
@@ -179,6 +179,10 @@
   },
   "active": "878ee9d428183ba2",
   "lastOpenFiles": [
+    "Network Implementation/Key Terms/Open Shortest Path First.md",
+    "Network Implementation/Key Terms/OSPFv2.md",
+    "Network Implementation/Exams/Modules 3 - 5 Study Guide.md",
+    "Network Components/Exams",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.10 Another Named Extended IPv4 ACL Example.md",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.11 Verify Extended ACLs.md",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/Images/5.4.10.png",
@@ -212,9 +216,6 @@
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.5 Numbered Standard IPv4 ACL Example.md",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.4 Apply a Standard IPv4 ACL.md",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.3 Named Standard IPv4 ACL Syntax.md",
-    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.2 Numbered Standard IPv4 ACL Syntax.md",
-    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.1 Create an ACL.md",
-    "Network Implementation/Modules/Module 4 ACL Concepts/4.4 Types of IPv4 ACLs/4.4.5 Extended ACL Placement Example.md",
     "Network Implementation/Exams",
     "Network Components/Modules/Module 6 EtherChannel",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/Images/5.1.6.png",
@@ -224,7 +225,6 @@
     "Network Components/Modules/Module 4 Inter-VLAN Routing/4.4 Common Inter-VLAN Issues",
     "Network Components/Modules/Module 4 Inter-VLAN Routing/4.3 Inter-VLAN Routing using Layer 3 Switches/Images",
     "Network Components/Modules/Module 5 STP Concepts/5.3 Evolution of STP/Images",
-    "Network Components/Modules/Module 5 STP Concepts/5.3 Evolution of STP",
     "Untitled.canvas"
   ]
 }
