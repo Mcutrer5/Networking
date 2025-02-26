@@ -1,12 +1,13 @@
 {
   "accentColor": "#db8433",
-  "cssTheme": "Primary",
+  "cssTheme": "Obsidian gruvbox",
   "textFontFamily": "FiraMono Nerd Font",
   "monospaceFontFamily": "FiraMono Nerd Font Mono",
-  "theme": "moonstone",
-  "baseFontSize": 12,
+  "theme": "obsidian",
+  "baseFontSize": 16,
   "enabledCssSnippets": [
     "extended-colorschemes",
     "TableOfContents"
-  ]
+  ],
+  "nativeMenus": false
 }
