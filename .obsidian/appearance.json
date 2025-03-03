@@ -9,5 +9,6 @@
     "extended-colorschemes",
     "TableOfContents"
   ],
-  "nativeMenus": false
+  "nativeMenus": false,
+  "baseFontSizeAction": true
 }

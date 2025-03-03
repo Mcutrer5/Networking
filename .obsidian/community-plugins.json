@@ -1,9 +1,6 @@
 [
   "table-editor-obsidian",
-  "obsidian-kanban",
-  "templater-obsidian",
   "highlightr-plugin",
   "tabs",
-  "obsidian-style-settings",
-  "editing-toolbar"
+  "obsidian-style-settings"
 ]

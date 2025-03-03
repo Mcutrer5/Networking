@@ -1,0 +1,1 @@
+A small program stored in ROM that is run immediately after POST successfully completes.
