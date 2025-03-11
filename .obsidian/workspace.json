@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "c1f5b3c94b305b38",
+        "id": "a046d9c39cd1db6e",
         "type": "tabs",
         "children": [
           {
-            "id": "befcdeb2f3021d15",
+            "id": "0360e0926709b26e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.6 DHCP.md",
-                "mode": "source",
+                "file": "Network Components/Modules/Module 7 DHCPv4/Module 7 DHCPv4.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.8.6 DHCP"
-            }
-          },
-          {
-            "id": "e4b898ac51ecfe03",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Network Components/Modules/Module 6 EtherChannel/6.3 Verify and Troubleshoot EtherChannel/6.3.3 Troubleshoot EtherChannel Example.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6.3.3 Troubleshoot EtherChannel Example"
+              "title": "Module 7 DHCPv4"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -190,10 +175,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e4b898ac51ecfe03",
+  "active": "0360e0926709b26e",
   "lastOpenFiles": [
-    "Network Components/Modules/Module 6 EtherChannel/6.3 Verify and Troubleshoot EtherChannel/6.3.2 Common Issues with EtherChannel Configurations.md",
+    "Network Components/Exams/Modules 7-8 Study Guide.md",
+    "Network Components/Modules/Module 7 DHCPv4/7.1 DHCPv4 Server and Client/7.1.1 DHCPv4 Server and Client.md",
+    "Network Components/Modules/Module 7 DHCPv4/Module 7 DHCPv4.md",
+    "Network Components/Modules/Module 7 DHCPv4/7.1 DHCPv4 Server and Client/Images",
+    "Network Components/Modules/Module 7 DHCPv4/7.3 Configure a DHCPv4 Client",
+    "Network Components/Modules/Module 7 DHCPv4/7.2 Configure a Cisco IOS DHCPv4 Server",
+    "Network Components/Modules/Module 7 DHCPv4/7.1 DHCPv4 Server and Client",
+    "Network Components/Modules/Module 6 EtherChannel/Module 6 EtherChannel.md",
+    "Network Components/Modules/Module 7 DHCPv4",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.6 DHCP.md",
     "Network Components/Modules/Module 6 EtherChannel/6.3 Verify and Troubleshoot EtherChannel/6.3.3 Troubleshoot EtherChannel Example.md",
+    "Network Components/Modules/Module 6 EtherChannel/6.3 Verify and Troubleshoot EtherChannel/6.3.2 Common Issues with EtherChannel Configurations.md",
     "Network Components/Modules/Module 6 EtherChannel/6.3 Verify and Troubleshoot EtherChannel/Images/6.3.3.png",
     "Network Components/Modules/Module 6 EtherChannel/6.3 Verify and Troubleshoot EtherChannel/6.3.1 Verify EtherChannel.md",
     "Network Components/Modules/Module 6 EtherChannel/6.2 Configure EtherChannel/6.2.1 Configuration Guidelines.md",
@@ -202,7 +197,6 @@
     "Network Components/Modules/Module 6 EtherChannel/6.3 Verify and Troubleshoot EtherChannel/Images",
     "Network Components/Modules/Module 6 EtherChannel/6.2 Configure EtherChannel/Images/6.2.2.png",
     "Network Components/Modules/Module 6 EtherChannel/6.2 Configure EtherChannel/Images/6.2.1_2.png",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.6 DHCP.md",
     "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.7 DHCP Attacks.md",
     "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.4 IPS.md",
     "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.5 Content Security Appliances.md",
@@ -219,20 +213,11 @@
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.1 Extended ACLs.md",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.2 Numbered Extended IPv4 ACL Syntax.md",
     "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.3 Protocols and Ports.md",
-    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.11 Verify Extended ACLs.md",
-    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.10 Another Named Extended IPv4 ACL Example.md",
-    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.9 Edit Extended ACLs.md",
-    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.4 Configure Extended IPv4 ACLs/5.4.8 Named Extended IPv4 ACL Example.md",
     "Network Components/Modules/Module 6 EtherChannel/6.2 Configure EtherChannel/Images/6.2.1_1.png",
     "Network Components/Modules/Module 6 EtherChannel/6.2 Configure EtherChannel/Images",
     "A Plus/Computer Systems/Domains/Troubleshooting",
     "A Plus/Computer Systems/Domains/Networking/Wireless Networking",
     "A Plus/Computer Systems/Domains/Networking/Networking Basics",
-    "A Plus/Computer Systems/Domains/Networking/Network Devices",
-    "A Plus/Computer Systems/Domains/Networking/Internet Protocol (IP)",
-    "A Plus/Computer Systems/Domains/Networking",
-    "A Plus/Computer Systems/Domains/Mobile Devices/Mobile Troubleshooting",
-    "A Plus/Computer Systems/Domains/Mobile Devices/Mobile Operating Systems",
     "Network Components/Modules/Module 6 EtherChannel/6.1 EtherChannel Operation/Images/6.1.9.png",
     "Network Components/Modules/Module 6 EtherChannel/6.1 EtherChannel Operation/Images/6.1.7.png",
     "Network Components/Modules/Module 6 EtherChannel/6.1 EtherChannel Operation/Images/6.1.3.png",
