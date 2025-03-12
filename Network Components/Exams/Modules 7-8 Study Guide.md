@@ -1,674 +1,692 @@
-**1. Which two statements accurately describe an advantage or a disadvantage when deploying NAT for IPv4 in a network? (Choose two.)**
+#### Modules 7 – 9 of the CCNA2 – Switching, Routing and Wireless Essentials v7.0 (SRWE)
 
-- NAT improves packet handling.
-- NAT adds authentication capability to IPv4.
-- NAT will impact negatively on switch performance.
-- NAT causes routing tables to include more information.
-- **NAT provides a solution to slow down the IPv4 address depletion.**
-- **NAT introduces problems for some applications that require end-to-end connectivity.**
+**1. A DHCP-enabled client PC has just booted. During which two steps will the client PC use broadcast messages when communicating with a DHCP server? (Choose two.)**
 
-**Explanation:** Network Address Translation (NAT) is a technology that is implemented within IPv4 networks. One application of NAT is to use private IP addresses inside a network and use NAT to share a few public IP addresses for many internal hosts. In this way it provides a solution to slow down the IPv4 address depletion. However, since NAT hides the actual IP addresses that are used by end devices, it may cause problems for some applications that require end-to-end connectivity.
+- **DHCPDISCOVER**
+- DHCPACK
+- DHCPOFFER
+- **DHCPREQUEST**
+- DHCPNAK
 
-**2. A network administrator wants to examine the active NAT translations on a border router. Which command would perform the task?**
+**Explanation:** All DHCP messages between a DHCP-enabled client and a DHCP server are using broadcast messages until after the DHCPACK message. The DHCPDISCOVER and DHCPREQUEST messages are the only messages that are sent by a DHCP-enabled client. All DHCP messages between a DHCP-enabled client and a DHCP server use broadcast messages when the client is obtaining a lease for the first time.
 
-- **Router# show ip nat translations**
-- Router# show ip nat statistics
-- Router# clear ip nat translations
-- Router# debug ip nat translations
+**2. An administrator issues the commands:**
 
-**3. What are two tasks to perform when configuring static NAT? (Choose two.)**
+Router(config)# interface g0/1
+Router(config-if)# ip address dhcp
 
-- Configure a NAT pool.
-- **Create a mapping between the inside local and outside local addresses.**
-- **Identify the participating interfaces as inside or outside interfaces.**
-- Define the inside global address on the server
-- Define the outside global address.
+**What is the administrator trying to achieve?**
 
-**Explanation:** There is no server involved when using NAT. The outside global address will change for each destination the inside host will try to reach. A NAT pool is only configured for dynamic NAT implementations.
+- configuring the router to act as a DHCPv4 server
+- **configuring the router to obtain IP parameters from a DHCPv4 server**
+- configuring the router to act as a relay agent
+- configuring the router to resolve IP address conflicts
 
-**4. What is a disadvantage of NAT?**
+**3. When a client is requesting an initial address lease from a DHCP server, why is the DHCPREQUEST message sent as a broadcast?**
 
-- **There is no end-to-end addressing.**
-- The router does not need to alter the checksum of the IPv4 packets.​
-- The internal hosts have to use a single public IPv4 address for external communication.
-- The costs of readdressing hosts can be significant for a publicly addressed network.​
+- The client does not yet know the IP address of the DHCP server that sent the offer.
+- The DHCP server may be on a different subnet, so the request must be sent as a broadcast.
+- The client does not have a MAC address assigned yet, so it cannot send a unicast message at Layer 2.
+- **The client may have received offers from multiple servers, and the broadcast serves to implicitly decline those other offers.**
 
-**5. Refer to the exhibit. From the perspective of R1, the NAT router, which address is the inside global address?**
+**Explanation:** During the initial DHCP exchange between a client and server, the client broadcasts a DHCPDISCOVER message looking for DHCP servers. Multiple servers may be configured to respond to this request with DHCPOFFER messages. The client will choose the lease from one of the servers by sending a DHCPREQUEST message. It sends this message as a broadcast so that the other DHCP servers that sent offers will know that their offers were declined and the corresponding address can go back into the pool.
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i215652v4n1_215652.gif)
+**4. Which DHCP IPv4 message contains the following information?**
 
-- 192.168.0.10
-- 192.168.0.1
-- **209.165.200.225**
-- 209.165.200.254
+Destination address: 255.255.255.255  
+Client IPv4 address: 0.0.0.0  
+Default gateway address: 0.0.0.0  
+Subnet mask: 0.0.0.0
 
-**Explanation:** There are four types of addresses in NAT terminology.  
-Inside local address  
-Inside global address  
-Outside local address  
-Outside global address  
-The inside global address of PC1 is the address that the ISP sees as the source address of packets, which in this example is the IP address on the serial interface of R1, 209.165.200.224.
+- DHCPACK
+- **DHCPDISCOVER**
+- DHCPOFFER
+- DHCPREQUEST
 
-**6. Refer to the exhibit. Given the commands as shown, how many hosts on the internal LAN off R1 can have simultaneous NAT translations on R1?**
+**5. Place the options in the following order:**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i215654v5n1_215654.gif)
+- a client initiating a message to find a DHCP server – DHCPDISCOVER
+- a DHCP server responding to the initial request by a client – DHCPOFFER
+- the client accepting the IP address provided by the DHCP server – DHCPREQUEST
+- the DHCP server confirming that the lease has been accepted – DHCPACK
 
-- 244
-- 10
-- **1**
-- 255
+**6. Which protocol automates assignment of IP addresses on a network, and which port number does it use? (Choose two.)**
 
-**Explanation:** The NAT configuration on R1 is static NAT which translates a single inside IP address, 192.168.0.10 into a single public IP address, 209.165.200.255. If more hosts need translation, then a NAT pool of inside global address or overloading should be configured.
+- **DHCP**
+- DNS
+- SMB
+- 53
+- **67**
+- 80
 
-**7. Refer to the exhibit. A network administrator has just configured address translation and is verifying the configuration. What three things can the administrator verify? (Choose three.)**
+**Explanation:** DNS uses port 53 and translates URLs to IP addresses. SMB provides shared access to files and printers and uses port 445. Port 80 is used by HTTP. HTTP is a protocol used to communicate between a web browser and a server.
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i215839v1n1_NAT.png)
+**7. Refer to the exhibit. PC1 is configured to obtain a dynamic IP address from the DHCP server. PC1 has been shut down for two weeks. When PC1 boots and tries to request an available IP address, which destination IP address will PC1 place in the IP header?**
 
-- **A standard access list numbered 1 was used as part of the configuration process.**
-- Three addresses from the NAT pool are being used by hosts.
-- **Address translation is working.**
-- One port on the router is not participating in the address translation.
-- The name of the NAT pool is refCount.
-- **Two types of NAT are enabled.**
+![](https://itexamanswers.net/wp-content/uploads/2019/12/i207537v1n2_207537.png)
 
-**Explanation:** The **show ip nat statistics, show ip nat translations**, and **debug ip nat** commands are useful in determining if NAT is working and and also useful in troubleshooting problems that are associated with NAT. NAT is working, as shown by the hits and misses count. Because there are four misses, a problem might be evident. The standard access list numbered 1 is being used and the translation pool is named NAT as evidenced by the last line of the output. Both static NAT and NAT overload are used as seen in the Total translations line.
+- 192.168.1.1
+- 192.168.1.255
+- **255.255.255.255**
+- 192.168.1.8
 
-**8. Refer to the exhibit. NAT is configured on RT1 and RT2. The PC is sending a request to the web server. What IPv4 address is the source IP address in the packet between RT2 and the web server?**
+**Explanation:** When a host boots and has been configured for dynamic IP addressing, the device tries to obtain a valid IP address. It sends a DHCPDISCOVER message. This is a broadcast message because the DHCP server address is unknown (by design). The destination IP address in the IP header is 255.255.255.255 and the destination MAC address is FF:FF:FF:FF:FF:FF.
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i246206v1n1_215826.png)
+**8. Which message does an IPv4 host use to reply when it receives a DHCPOFFER message from a DHCP server?**
 
-- 192.168.1.5
-- 203.0.113.10
-- 172.16.1.254
-- 172.16.1.10
-- **209.165.200.245**
-- 192.0.2.2
+- DHCPOFFER
+- DHCPDISCOVER
+- **DHCPREQUEST**
+- DHCPACK
 
-**Explanation:** Because the packet is between RT2 and the web server, the source IP address is the inside global address of PC, 209.165.200.245.
+**Explanation:** When the client receives the DHCPOFFER from the server, it sends back a DHCPREQUEST broadcast message. On receiving the DHCPREQUEST message, the server replies with a unicast DHCPACK message.
 
-**9. Refer to the exhibit. Based on the output that is shown, what type of NAT has been implemented?**
+**9. Which command, when issued in the interface configuration mode of a router, enables the interface to acquire an IPv4 address automatically from an ISP, when that link to the ISP is enabled?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i278362v1n2_212297v2.png)
+- service dhcp
+- **ip address dhcp**
+- ip helper-address
+- ip dhcp pool
 
-- dynamic NAT with a pool of two public IP addresses
-- **PAT using an external interface**
-- static NAT with a NAT pool
-- static NAT with one entry
+**Explanation:** The **ip address dhcp** interface configuration command configures an Ethernet interface as a DHCP client. The **service dhcp** global configuration command enables the DHCPv4 server process on the router. The **ip helper-address** command is issued to enable DHCP relay on the router. The **ip dhcp pool** command creates the name of a pool of addresses that the server can assign to hosts.
 
-**Explanation:** The output shows that there are two inside global addresses that are the same but that have different port numbers. The only time port numbers are displayed is when PAT is being used. The same output would be indicative of PAT that uses an address pool. PAT with an address pool is appropriate when more than 4,000 simultaneous translations are needed by the company.
+**10. Which kind of message is sent by a DHCP client when its IP address lease has expired?​**
 
-**10. Refer to the exhibit. From the perspective of users behind the NAT router, what type of NAT address is 209.165.201.1?**
+- a DHCPDISCOVER unicast message​
+- a DHCPREQUEST broadcast message​
+- **a DHCPREQUEST unicast message​**
+- a DHCPDISCOVER broadcast message
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i282189v1n2_282189.gif)
+**Explanation:** When the IP address lease time of the DHCP client expires, it sends a DHCPREQUEST unicast message directly to the DHCPv4 server that originally offered the IPv4 address.
 
-- **inside global**
-- outside global
-- outside local
-- inside local
+**11. A host PC is attempting to lease an address through DHCP. What message is sent by the server to let the client know it is able to use the provided IP information?**
 
-**Explanation:** From the perspective of users behind NAT, inside global addresses are used by external users to reach internal hosts. Inside local addresses are the addresses assigned to internal hosts. Outside global addresses are the addresses of destinations on the external network. Outside local addresses are the actual private addresses of destination hosts behind other NAT devices.
+- DHCPDISCOVER
+- DHCPOFFER
+- DHCPREQUEST
+- **DHCPACK**
+- DHCPNACK
 
-**11. Refer to the exhibit. Static NAT is being configured to allow PC 1 access to the web server on the internal network. What two addresses are needed in place of A and B to complete the static NAT configuration? (Choose two.)**
+**Explanation:** When a host uses DHCP to automatically configure an IP address, the typically sends two messages: the DHCPDISCOVER message and the DHCPREQUEST message. These two messages are usually sent as broadcasts to ensure that all DHCP servers receive them. The servers respond to these messages using DHCPOFFER, DHCPACK, and DHCPNACK messages, depending on the circumstance.
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i282898v1n2_282898.gif)
+**12. What is one indication that a Windows computer did not receive an IPv4 address from a DHCP server?**
 
-- A = 209.165.201.2
-- **A = 10.1.0.13**
-- B = 209.165.201.7
-- B = 10.0.254.5
-- **B = 209.165.201.1**
+- The computer cannot ping 127.0.0.1.
+- **The computer receives an IP address that starts with 169.254.**
+- Windows displays a DHCP timeout message.
+- The computer cannot ping other devices on the same network with IP addresses in the 169.254.0.0/16 range.
 
-**Explanation:** Static NAT is a one-to-one mapping between an inside local address and an inside global address. By using static NAT, external devices can initiate connections to internal devices by using the inside global addresses. The NAT devices will translate the inside global address to the inside local address of the target host.
+**Explanation:** When a Windows PC cannot communicate with an IPv4 DHCP server, the computer automatically assigns an IP address in the 169.254.0.0/16 range. Any other device on the same network that receives an address in the same range is reachable.​
 
-**12. What is the purpose of the overload keyword in the ip nat inside source list 1 pool NAT_POOL overload command?**
+**13. Which DHCPv4 message will a client send to accept an IPv4 address that is offered by a DHCP server?**
 
-- **It allows many inside hosts to share one or a few inside global addresses.**
-- It allows a list of internal hosts to communicate with a specific group of external hosts.
-- It allows external hosts to initiate sessions with internal hosts.
-- It allows a pool of inside global addresses to be used by internal hosts.
+- broadcast DHCPACK
+- **broadcast DHCPREQUEST**
+- unicast DHCPACK
+- unicast DHCPREQUEST
 
-**Explanation:** Dynamic NAT uses a pool of inside global addresses that are assigned to outgoing sessions. If there are more internal hosts than public addresses in the pool, then an administrator can enable port address translation with the addition of the **overload** keyword. With port address translation, many internal hosts can share a single inside global address because the NAT device will track the individual sessions by Layer 4 port number.
+**Explanation:** When a DHCP client receives DHCPOFFER messages, it will send a broadcast DHCPREQUEST message for two purposes. First, it indicates to the offering DHCP server that it would like to accept the offer and bind the IP address. Second, it notifies any other responding DHCP servers that their offers are declined.
 
-**13. Refer to the exhibit. Which source address is being used by router R1 for packets being forwarded to the Internet?**
+**14. A small coffee shop is offering free Wi-Fi to customers. The network includes a wireless router and a DSL modem that is connected to the local phone company. What method is typically used to configure the connection to the phone company?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i282910v1n1_282910.gif)
+- **Set the WAN connection in the wireless router as a DHCP client.**
+- Set the connection between the wireless router and the DSL modem as a private IP network.
+- Set the DSL modem as a DHCP client to get a public IP address from the wireless router.
+- Set the DSL modem as a DHCP client to the phone company and a DHCP server for the internal connection.
 
-- 10.6.15.2
-- 209.165.202.141
-- 198.51.100.3
-- **209.165.200.225**
+**Explanation:** In a SOHO environment, a wireless router connects to an ISP via a DSL or cable modem. The IP address between the wireless router and ISP site is typically assigned by the ISP through DHCP. The DSL modem does not manage IP address allocation.
 
-**Explanation:** The source address for packets forwarded by the router to the Internet will be the inside global address of 209.165.200.225. This is the address that the internal addresses from the 10.6.15.0 network will be translated to by NAT.
+**15. A company uses DHCP to manage IP address deployment for employee workstations. The IT department deploys multiple DHCP servers in the data center and uses DHCP relay agents to facilitate the DHCP requests from workstations. Which two UDP ports are used to forward DHCP traffic? (Choose two.)**
 
-**14. Refer to the exhibit. The NAT configuration applied to the router is as follows:**
+- 23
+- 53
+- **67**
+- **68**
+- 80
 
-ERtr(config)# access-list 1 permit 10.0.0.0 0.255.255.255
-ERtr(config)# ip nat pool corp 209.165.201.6 209.165.201.30 netmask 255.255.255.224
-ERtr(config)# ip nat inside source list 1 pool corp overload
-ERtr(config)# ip nat inside source static 10.10.10.55 209.165.201.4
-ERtr(config)# interface gigabitethernet 0/0
-ERtr(config-if)# ip nat inside
-ERtr(config-if)# interface serial 0/0/0
-ERtr(config-if)# ip nat outside
+**Explanation:** The DHCP protocol operates with 2 UDP ports. UDP port 67 is the destination port for DHCP servers, and DHCP clients use UDP port 68.
 
-**Based on the configuration and the output shown, what can be determined about the NAT status within the organization?**
+**16. A client device on an Ethernet segment needs an IP address in order to communicate on the network. A DHCP server with IP address 192.168.1.1 has been configured and enabled on the network. How will a client device obtain a usable IP address for this network?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i212298v1n2_212298.png)
+- Send a DHCPACK packet to the default gateway address.
+- Use a statically configured IP address from the pool of IP addresses that is offered by the DHCP server.
+- **Send a DHCPDISCOVER message to physical address FF-FF-FF-FF-FF-FF.**
+- Send a DHCPREQUEST packet to IP address 255.255.255.255.
 
-- Static NAT is working, but dynamic NAT is not.
-- Dynamic NAT is working, but static NAT is not.
-- **Not enough information is given to determine if both static and dynamic NAT are working.**
-- NAT is working.
+**Explanation:** Like IP addressing, there is also a special MAC address for broadcast purposes: FF-FF-FF-FF-FF-FF. When a DHCP client needs to send a DHCP Discover message in order to seek DHCP servers, the client will use this MAC address as the destination MAC address in the Ethernet frame. It does this because it has no knowledge of the IP and MAC addresses of DHCP servers.
 
-**Explanation:** There is not enough information given because the router might not be attached to the network yet, the interfaces might not have IP addresses assigned yet, or the command could have been issued in the middle of the night. The output does match the given configuration, so no typographical errors were made when the NAT commands were entered.
+**17. What is an advantage of configuring a Cisco router as a relay agent?**
 
-**15. Which situation describes data transmissions over a WAN connection?**
+- **It can provide relay services for multiple UDP services.**
+- It reduces the response time from a DHCP server.
+- It can forward both broadcast and multicast messages on behalf of clients.
+- It will allow DHCPDISCOVER messages to pass without alteration.
 
-- A network administrator in the office remotely accesses a web server that is located in the data center at the edge of the campus.
-- A manager sends an email to all employees in the department with offices that are located in several buildings.
-- An employee prints a file through a networked printer that is located in another building.
-- **An employee shares a database file with a co-worker who is located in a branch office on the other side of the city.**
+**Explanation:** By default, the **ip helper-address** command forwards the following eight UDP services:  
+Port 37: Time  
+Port 49: TACACS  
+Port 53: DNS  
+Port 67: DHCP/BOOTP client  
+Port 68: DHCP/BOOTP server  
+Port 69: TFTP  
+Port 137: NetBIOS name service  
+Port 138: NetBIOS datagram service
 
-**Explanation:** When two offices across a city are communicating , it is most likely that the data transmissions are over some type of WAN connection. Data communications within a campus are typically over LAN connections.
+**18. Which statement is true about DHCP operation?​**
 
-**16. Which two technologies are categorized as private WAN infrastructures? (Choose two.)**
+- **When a device that is configured to use DHCP boots, the client broadcasts a DHCPDISCOVER message to identify any available DHCP servers on the network.​**
+- A client must wait for lease expiration before it sends another DHCPREQUEST message.​
+- If the client receives several DHCPOFFER messages from different servers, it sends a unicast DHCPREQUEST message to the server from which it chooses to obtain the IP information.
+- The DHCPDISCOVER message contains the IP address and subnet mask to be assigned, the IP address of the DNS server, and the IP address of the default gateway.​
 
-- **Frame Relay**
-- VPN
-- **MetroE**
-- DSL
-- cable
+**Explanation:** The client broadcasts a DHCPDISCOVER message to identify any available DHCP servers on the network. A DHCP server replies with a DHCPOFFER message. This message offers to the client a lease that contains such information as the IP address and subnet mask to be assigned, the IP address of the DNS server, and the IP address of the default gateway. After the client receives the lease, the received information must be renewed through another DHCPREQUEST message prior to the lease expiration.
 
-**Explanation:** Private WAN technologies include leased lines, dialup, ISDN, Frame Relay, ATM, Ethernet WAN (an example is MetroE), MPLS, and VSAT.
+**19. Order the DHCP message types as they would occur between a DHCP client and a DHCP server.**  
+![](https://itexamanswers.net/wp-content/uploads/2019/12/349.jpg)  
 
-**17. Which network scenario will require the use of a WAN?**
+**Explanation:** The DHCPDISCOVER message is used to identify any DHCP servers on a network.  
+The DHCPOFFER message is used by a server to offer a lease to a client. The DHCPREQUEST message is used to identify both the specific DHCP server and the lease that the client is accepting.  
+The DHCPACK message is used by a server to finalize a successful lease with a client.  
+The DHCPNAK message is used when an offered lease is no longer valid.
 
-- **Employees need to connect to the corporate email server through a VPN while traveling.**
-- Employees need to access web pages that are hosted on the corporate web servers in the DMZ within their building.
-- Employee workstations need to obtain dynamically assigned IP addresses.
-- Employees in the branch office need to share files with the headquarters office that is located in a separate building on the same campus network.
+**20. A network administrator configures a router to send RA messages with M flag as 0 and O flag as 1. Which statement describes the effect of this configuration when a PC tries to configure its IPv6 address?**
 
-**Explanation:** When traveling employees need to connect to a corporate email server through a WAN connection, the VPN will create a secure tunnel between an employee laptop and the corporate network over the WAN connection. Obtaining dynamic IP addresses through DHCP is a function of LAN communication. Sharing files among separate buildings on a corporate campus is accomplished through the LAN infrastructure. A DMZ is a protected network inside the corporate LAN infrastructure.
+- It should contact a DHCPv6 server for the prefix, the prefix-length information, and an interface ID that is both random and unique.
+- **It should use the information that is contained in the RA message and contact a DHCPv6 server for additional information.**
+- It should use the information that is contained in the RA message exclusively.
+- It should contact a DHCPv6 server for all the information that it needs.
 
-**18. What are two hashing algorithms used with IPsec AH to guarantee authenticity? (Choose two.)**
+**Explanation:** ICMPv6 RA messages contain two flags to indicate whether a workstation should use SLAAC, a DHCPv6 server, or a combination to configure its IPv6 address. These two flags are M flag and O flag. When both flags are 0 (by default), a client must only use the information in the RA message. When M flag is 0 and O flag is 1, a client should use the information in the RA message and look for the other configuration parameters (such as DNS server addresses) on DHCPv6 servers.
 
-- **SHA**
-- RSA
-- DH
-- **MD5**
-- AES
+**21. Refer to the exhibit. What should be done to allow PC-A to receive an IPv6 address from the DHCPv6 server?**
 
-**Explanation:** The IPsec framework uses various protocols and algorithms to provide data confidentiality, data integrity, authentication, and secure key exchange. Two popular algorithms used to ensure that data is not intercepted and modified (data integrity and authenticity) are MD5 and SHA.
+![](https://itexamanswers.net/wp-content/uploads/2019/12/i210917v1n1_Question-8.png)
 
-**19. What two algorithms can be part of an IPsec policy to provide encryption and hashing to protect interesting traffic? (Choose two.)**
+- **Add the _ipv6 dhcp relay_ command to interface Fa0/0.**
+- Change the _ipv6 nd managed-config-flag_ command to _ipv6 nd other-config-flag._
+- Configure the _ipv6 nd managed-config-flag_ command on interface Fa0/1.
+- Add the IPv6 address 2001:DB8:1234:5678::10/64 to the interface configuration of the DHCPv6 server.
 
-- **SHA**
-- RSA
-- **AES**
-- DH
-- PSK
+**Explanation:** Client DHCPv6 messages are sent to a multicast address with link-local scope, which means that the messages will not be forwarded by routers. Because the client and server are on different subnets on different interfaces, the message will not reach the server. The router can be configured to relay the DHCPv6 messages from the client to the server by configuring the ipv6 dhcp relay command on the interface that is connected to the client.
 
-**Explanation:** The IPsec framework uses various protocols and algorithms to provide data confidentiality, data integrity, authentication, and secure key exchange. Two algorithms that can be used within an IPsec policy to protect interesting traffic are AES, which is an encryption protocol, and SHA, which is a hashing algorithm.
+**22. Refer to the exhibit. A network administrator is implementing the stateless DHCPv6 operation for the company. Clients are configuring IPv6 addresses as expected. However, the clients are not getting the DNS server address and the domain name information configured in the DHCP pool. What could be the cause of the problem?**
 
-**20. Which VPN solution allows the use of a web browser to establish a secure, remote-access VPN tunnel to the ASA?**
+![](https://itexamanswers.net/wp-content/uploads/2019/12/i222841v1n1_210900.png)
 
-- client-based SSL
-- site-to-site using an ACL
-- **clientless SSL**
-- site-to-site using a preshared key
+- The DNS server address is not on the same network as the clients are on.
+- **The router is configured for SLAAC operation.**
+- The GigabitEthernet interface is not activated.
+- The clients cannot communicate with the DHCPv6 server, evidenced by the number of active clients being 0.
 
-**Explanation:** When a web browser is used to securely access the corporate network, the browser must use a secure version of HTTP to provide SSL encryption. A VPN client is not required to be installed on the remote host, so a clientless SSL connection is used.
+**Explanation:** The router is configured for SLAAC operation because there is no configuration command to change the RA M and O flag value. By default, both M and O flags are set to 0. In order to permint stateless DHCPv6 operation, the interface command **ipv6 nd other-config-flag** should be issued. The GigabitEthernet interface is in working condition because clients can get RA messages and configure their IPv6 addresses as expected. Also, the fact that R1 is the DHCPv6 server and clients are getting RA messages indicates that clients can communicate with the DHCP server. The number of active clients is 0 because the DHCPv6 server does not maintain the state of clients IPv6 addresses (it is not configured for stateful DHCPv6 operation). The DNS server address issue is not relevant to the problem.
 
-**21. Which IPsec security function provides assurance that the data received via a VPN has not been modified in transit?**
+**23. Question as presented:**
 
-- **integrity**
-- authentication
-- confidentiality
-- secure key exchange
+A stateless DHCPv6 client would send a DHCPv6 INFORMATION-REQUEST message as step 3 in the process.
 
-**Explanation:** Integrity is a function of IPsec and ensures data arrives unchanged at the destination through the use of a hash algorithm. Confidentiality is a function of IPsec and utilizes encryption to protect data transfers with a key. Authentication is a function of IPsec and provides specific access to users and devices with valid authentication factors. Secure key exchange is a function of IPsec and allows two peers to maintain their private key confidentiality while sharing their public key.
+**24. A company uses the SLAAC method to configure IPv6 addresses for the employee workstations. Which address will a client use as its default gateway?​**
 
-**22. Which two types of VPNs are examples of enterprise-managed remote access VPNs? (Choose two.)**
+- the global unicast address of the router interface that is attached to the network
+- the unique local address of the router interface that is attached to the network
+- the all-routers multicast address
+- **the link-local address of the router interface that is attached to the network**
 
-- **clientless SSL VPN**
-- **client-based IPsec VPN**
-- IPsec VPN
-- IPsec Virtual Tunnel Interface VPN
-- GRE over IPsec VPN
+**Explanation:** When a PC is configured to use the SLAAC method for configuring IPv6 addresses, it will use the prefix and prefix-length information that is contained in the RA message, combined with a 64-bit interface ID (obtained by using the EUI-64 process or by using a random number that is generated by the client operating system), to form an IPv6 address. It uses the link-local address of the router interface that is attached to the LAN segment as its IPv6 default gateway address.
 
-**Explanation:** Enterprise managed VPNs can be deployed in two configurations:
+**25. Refer to the exhibit. A network administrator is configuring a router for DHCPv6 operation. Which conclusion can be drawn based on the commands?**
 
-- **Remote Access VPN** – This VPN is created dynamically when required to establish a secure connection between a client and a VPN server. Remote access VPNs include client-based IPsec VPNs and clientless SSL VPNs.
-- **Site-to-site VPN** – This VPN is created when interconnecting devices are preconfigured with information to establish a secure tunnel. VPN traffic is encrypted only between the interconnecting devices, and internal hosts have no knowledge that a VPN is used. Site-to-site VPNs include IPsec, GRE over IPsec, Cisco Dynamic Multipoint (DMVPN), and IPsec Virtual Tunnel Interface (VTI) VPNs.
-    
+![](https://itexamanswers.net/wp-content/uploads/2019/12/i210893v1n1_210893.png)
 
-**23. Which is a requirement of a site-to-site VPN?**
+- The router is configured for stateful DHCPv6 operation, but the DHCP pool configuration is incomplete.
+- The DHCPv6 server name is ACAD_CLASS.
+- Clients would configure the interface IDs above 0010.
+- **The router is configured for stateless DHCPv6 operation.**
 
-- It requires hosts to use VPN client software to encapsulate traffic.
-- It requires the placement of a VPN server at the edge of the company network.
-- **It requires a VPN gateway at each end of the tunnel to encrypt and decrypt traffic.**
-- It requires a client/server architecture.
+**Explanation:** The DHCPv6 is for the stateless DHCPv6 operation that is indicated by changing the O flag to 1 and leaving the M flag as default, which is 0. Therefore, it is not configured for stateful DHCPv6 operation. Although the DNS server has the interface ID 0010, clients in stateless DHCPv6 operation will configure their interface IDs either by EUI-64 or a random number. The ACAD_CLASS is the name of the DHCP pool, not the DHCP server name.
 
-**Explanation:** Site-to-site VPNs are static and are used to connect entire networks. Hosts have no knowledge of the VPN and send TCP/IP traffic to VPN gateways. The VPN gateway is responsible for encapsulating the traffic and forwarding it through the VPN tunnel to a peer gateway at the other end which decapsulates the traffic.
+**26. A network administrator is analyzing the features that are supported by different first-hop router redundancy protocols. Which statement describes a feature that is associated with HSRP?**
 
-**24. What is the function of the Diffie-Hellman algorithm within the IPsec framework?**
+- **HSRP uses active and standby routers.**
+- HSRP is nonproprietary.
+- It allows load balancing between a group of redundant routers.
+- It uses ICMP messages in order to assign the default gateway to hosts.
 
-- guarantees message integrity
-- **allows peers to exchange shared keys**
-- provides authentication
-- provides strong data encryption
+**Explanation:** The HSRP first-hop router redundancy protocol is Cisco proprietary and supports standby and active devices. VRRPv2 and VRRPv3 are nonproprietary. GLBP is Cisco proprietary and supports load balancing between a group of redundant routers.
 
-**Explanation:** The IPsec framework uses various protocols and algorithms to provide data confidentiality, data integrity, authentication, and secure key exchange. DH (Diffie-Hellman) is an algorithm used for key exchange. DH is a public key exchange method that allows two IPsec peers to establish a shared secret key over an insecure channel.
+**27. Refer to the exhibit. What protocol can be configured on gateway routers R1 and R2 that will allow traffic from the internal LAN to be load balanced across the two gateways to the Internet?**
 
-**25. What does NAT overloading use to track multiple internal hosts that use one inside global address?**
+![](https://itexamanswers.net/wp-content/uploads/2019/12/i216443v1n1_216443.png)
 
-- **port numbers**
-- IP addresses
-- autonomous system numbers
-- MAC addresses
+- **GLBP**
+- PVST+
+- PVST
+- STP
 
-**Explanation:** NAT overloading, also known as Port Address Translation (PAT), uses port numbers to differentiate between multiple internal hosts.
+**Explanation:** GLBP, or Group Load Balancing Protocol, allows multiple routers to act as a single default gateway for hosts. GLBP load balances the traffic across the individual routers on a per host basis.
 
-**26. Question as presented:**
+**28. Refer to the exhibit. A network engineer is troubleshooting host connectivity on a LAN that uses a first hop redundancy protocol. Which IPv4 gateway address should be configured on the host?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i249830v1n1_212288.png)
+![](https://itexamanswers.net/wp-content/uploads/2019/12/i216427v1n1_216427v2.png)
 
-**Explanation:** The inside local address is the private IP address of the source or the PC in this instance. The inside global address is the translated address of the source or the address as seen by the outside device. Since the PC is using the outside address of the R1 router, the inside global address is 192.0.2.1. The outside addressing is simply the address of the server or 203.0.113.5.
+- 192.168.2.0
+- 192.168.2.1
+- 192.168.2.2
+- **192.168.2.100**
 
-**27. Refer to the exhibit. R1 is configured for static NAT. What IP address will Internet hosts use to reach PC1?**
+**Explanation:** The host default gateway address should be the FHRP (in this case GLBP) virtual IP address.
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i216440v5n1_216440.png)
+**29. Refer to the exhibit. Which destination MAC address is used when frames are sent from the workstation to the default gateway?**
 
-- 192.168.0.1
-- 192.168.0.10
-- 209.165.201.1
-- **209.165.200.225**
+![](https://itexamanswers.net/wp-content/uploads/2019/12/i223091v1n1_223091.png)
 
-**Explanation:** In static NAT a single inside local address, in this case 192.168.0.10, will be mapped to a single inside global address, in this case 209.165.200.225. Internet hosts will send packets to PC1 and use as a destination address the inside global address 209.165.200.225.
+- **MAC address of the virtual router**
+- MAC address of the standby router
+- MAC addresses of both the forwarding and standby routers
+- MAC address of the forwarding router
 
-**28. Which type of VPN uses the public key infrastructure and digital certificates?​**
+**Explanation:** The IP address of the virtual router acts as the default gateway for all the workstations. Therefore, the MAC address that is returned by the Address Resolution Protocol to the workstation will be the MAC address of the virtual router.
 
-- **SSL VPN**
-- GRE over IPsec
-- IPsec virtual tunnel interface
-- dynamic multipoint VPN
+**30. Question as presented:**
 
-**29. Which two WAN infrastructure services are examples of private connections? (Choose two.)**
+Hot Standby Router Protocol (HSRP) is a Cisco-proprietary protocol that is designed to allow for transparent failover of a first-hop IPv4 device.
 
-- cable
-- DSL
-- **Frame Relay**
-- **T1/E1**
-- wireless
+**31. Which FHRP implementation is a Cisco-proprietary protocol that suppports IPv4 load sharing?**
 
-**Explanation:** Private WANs can use T1/E1, T3/E3, PSTN, ISDN, Metro Ethernet, MPLS, Frame Relay, ATM, or VSAT technology.
+- IRDP
+- **GLBP**
+- VRRPv3
+- GLBP for IPv6
 
-**30. Which two statements about the relationship between LANs and WANs are true? (Choose two.)**
+**32. The address pool of a DHCP server is configured with 10.92.71.0/25. The network administrator reserves 8 IP addresses for servers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-- Both LANs and WANs connect end devices.
-- **WANs are typically operated through multiple ISPs, but LANs are typically operated by single organizations or individuals.**
-- WANs must be publicly-owned, but LANs can be owned by either public or private entities.
-- **WANs connect LANs at slower speed bandwidth than LANs connect their internal end devices.​**
-- LANs connect multiple WANs together.
+- 122
+- **118**
+- 119
+- 108
+- 116
 
-**Explanation:** Although LANs and WANs can employ the same network media and intermediary devices, they serve very different areas and purposes. The administrative and geographical scope of a WAN is larger than that of a LAN. Bandwidth speeds are slower on WANs because of their increased complexity. The Internet is a network of networks, which can function under either public or private management.
+**Explanation:** Calculate the maximum number of hosts available for the slash value and subtract the required static IP addresses required for the devices.  
+/24 = 254 hosts  
+/25 = 126 hosts  
+/26 = 62 hosts  
+/27 = 30 hosts  
+/28 = 14 hosts
 
-**31. Which statement describes an important characteristic of a site-to-site VPN?**
+**33. Question as presented:**
 
-- **It must be statically set up.**
-- It is ideally suited for use by mobile workers.
-- It requires using a VPN client on the host PC.
-- After the initial connection is established, it can dynamically change connection information.
-- It is commonly implemented over dialup and cable modem networks.
+The broadcast DHCPDISCOVER message finds DHCPv4 servers on the network. When the DHCPv4 server receives a DHCPDISCOVER message, it reserves an available IPv4 address to lease to the client and sends the unicast DHCPOFFER message to the requesting client. When the client receives the DHCPOFFER from the server, it sends back a DHCPREQUEST. On receiving the DHCPREQUEST message the server replies with a unicast DHCPACK message. DHCPREPLY and DHCPINFORMATION-REQUEST are DHCPv6 messages.
 
-**Explanation:** A site-to-site VPN is created between the network devices of two separate networks. The VPN is static and stays established. The internal hosts of the two networks have no knowledge of the VPN.
+**34. After a host has generated an IPv6 address by using the DHCPv6 or SLAAC process, how does the host verify that the address is unique and therefore usable?**
 
-**32. How is “tunneling” accomplished in a VPN?**
+- The host sends an ICMPv6 echo request message to the DHCPv6 or SLAAC-learned address and if no reply is returned, the address is considered unique.
+- **The host sends an ICMPv6 neighbor solicitation message to the DHCP or SLAAC-learned address and if no neighbor advertisement is returned, the address is considered unique.**
+- The host checks the local neighbor cache for the learned address and if the address is not cached, it it considered unique.
+- The host sends an ARP broadcast to the local link and if no hosts send a reply, the address is considered unique.
 
-- **New headers from one or more VPN protocols encapsulate the original packets.**
-- All packets between two hosts are assigned to a single physical medium to ensure that the packets are kept private.
-- Packets are disguised to look like other types of traffic so that they will be ignored by potential attackers.
-- A dedicated circuit is established between the source and destination devices for the duration of the connection.
+**Explanation:** Before a host can actually configure and use an IPv6 address learned through SLAAC or DHCP, the host must verify that no other host is already using that address. To verify that the address is indeed unique, the host sends an ICMPv6 neighbor solicitation to the address. If no neighbor advertisement is returned, the host considers the address to be unique and configures it on the interface.
 
-**Explanation:** Packets in a VPN are encapsulated with the headers from one or more VPN protocols before being sent across the third party network. This is referred to as “tunneling”. These outer headers can be used to route the packets, authenticate the source, and prevent unauthorized users from reading the contents of the packets.
+**35. Which statement describes HSRP?​**
 
-**33. Which statement describes a VPN?**
+- **It is used within a group of routers for selecting an active device and a standby device to provide gateway services to a LAN.**
+- It uses ICMP to allow IPv4 hosts to locate routers that provide IPv4 connectivity to remote IP networks.​
+- If the virtual router master fails, one router is elected as the virtual router master with the other routers acting as backups.
+- It is an open standard protocol.
 
-- VPNs use open source virtualization software to create the tunnel through the Internet.
-- VPNs use logical connections to create public networks through the Internet.
-- VPNs use dedicated physical connections to transfer data between remote users.
-- **VPNs use virtual connections to create a private network through a public network.**
+**Explanation:** It is VRRP that elects one router as the virtual router master, with the other routers acting as backups in case the virtual router master fails. HSRP is a Cisco-proprietary protocol. IRDP uses ICMP messages to allow IPv4 hosts to locate routers that provide IPv4 connectivity to other (nonlocal) IP networks. HSRP selects active and standby routers to provide gateway services to hosts on a LAN.
 
-**Explanation:** A VPN is a private network that is created over a public network. Instead of using dedicated physical connections, a VPN uses virtual connections routed through a public network between two network devices.
-
-**34. Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.**  
-**What problem is causing PC-A to be unable to communicate with the Internet?**  
-![](https://itexamanswers.net/wp-content/uploads/2019/12/2020-05-20_080357.jpg)
+**36.Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.**  
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2020-03-31_170332.jpg)
 
 ![Icon](https://itexamanswers.net/wp-content/plugins/download-manager/assets/file-type-icons/pka.svg)
 
-###### [Modules 6 – 8: WAN Concepts](https://itexamanswers.net/download/modules-6-8-wan-concepts)
+###### [Modules 7 - 9 Available and Reliable Networks](https://itexamanswers.net/download/modules-7-9-available-and-reliable-networks)
 
-1 file(s) 72.97 KB
+1 file(s) 159.43 KB
 
-- The ip nat inside source command refers to the wrong interface.
-- **The NAT interfaces are not correctly assigned.**
-- The static route should not reference the interface, but the outside address instead.
-- The access list used in the NAT process is referencing the wrong subnet.
-- This router should be configured to use static NAT instead of PAT.
+**What is the keyword that is displayed on www.netacad.com?**
 
-**Explanation:** The output of **show ip nat statistics** shows that the inside interface is FastEthernet0/0 but that no interface has been designated as the outside interface. This can be fixed by adding the command ip nat outside to interface Serial0/0/0.
+- DHCP
+- switch
+- **Router**
+- networking
+- Cisco
+- IPv6
 
-**35. What type of address is 64.100.190.189?**
+**Explanation:** In order for the host to receive the address of the DNS server, the host must use stateless DHCPv6. The router is configured with the correct DHCPv6 pool, but is missing the command ipv6 nd other-config-flag that signals to the host that it should use DHCPv6 to get additional address information. This command should be added to the interface Gigabit0/0 configuration on the router.
 
-- **public**
-- private
+**37. Match each DHCP message type with its description. (Not all options are used.)**  
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-20_231506.jpg)  
 
-**36. Which type of VPN routes packets through virtual tunnel interfaces for encryption and forwarding?**
+**Explanation:** Place the options in the following order:
 
-- MPLS VPN
-- **IPsec virtual tunnel interface**
-- dynamic multipoint VPN
-- GRE over IPsec
+- a client initiating a message to find a DHCP server – DHCPDISCOVER
+- a DHCP server responding to the initial request by a client – DHCPOFFER
+- the client accepting the IP address provided by the DHCP server – DHCPREQUEST
+- the DHCP server confirming that the lease has been accepted – DHCPACK
 
-**37. Match the scenario to the WAN solution. (Not all options are used.)**  
-![](https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-21_004658.jpg)
+**38. Match the purpose with its DHCP message type. (Not all options are used.)**  
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-20_232028.jpg)  
 
-**38. Question as presented:**  
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i249830v1n1_212288-1.png)  
-**Refer to the exhibit. The PC is sending a packet to the Server on the remote network. Router R1 is performing NAT overload. From the perspective of the PC, match the NAT address type with the correct IP address. (Not all options are used.)**
+**Explanation:** The DHCPDISCOVER message is used to identify any DHCP servers on a network. The DHCPOFFER message is used by a server to offer a lease to a client. The DHCPREQUEST message is used to identify both the specific DHCP server and the lease that the client is accepting.  
+The DHCPACK message is used by a server to finalize a successful lease with a client.  
+The DHCPNAK message is used when an offered lease is no longer valid.
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/2024-10-09_154604.jpg)  
+**39. Match the DHCP message types to the order of the stateful DHCPv6 process when a client first connects to an IPv6 network. (Not all options are used.)**
 
-**Explanation:** The inside local address is the private IP address of the source or the PC in this instance. The inside global address is the translated address of the source or the address as seen by the outside device. Since the PC is using the outside address of the R1 router, the inside global address is 192.0.2.1. The outside addressing is simply the address of the server or 203.0.113.5.
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2024-10-08_154259.jpg)
 
-**39. Refer to the exhibit. What has to be done in order to complete the static NAT configuration on R1?**
+|   |   |
+|---|---|
+|Step 1|DHCPv6 SOLICIT|
+|Step 2|DHCPv6 ADVERTISE|
+|Step 3|DHCPv6 REQUEST|
+|Step 4|DHCPv6 REPLY|
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-25_222653.png)
+**40. Match the step number to the sequence of stages that occur during the HSRP failover process. (Not all options are used.)**
 
-- Interface Fa0/0 should be configured with the command no ip nat inside.
-- **Interface S0/0/0 should be configured with the command ip nat outside.**
-- R1 should be configured with the command ip nat inside source static 209.165.200.200 192.168.11.11.
-- R1 should be configured with the command ip nat inside source static 209.165.200.1 192.168.11.11.
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2024-10-08_154407.jpg)
 
-**Explanation:** In order for NAT translations to work properly, both an inside and outside interface must be configured for NAT translation on the router.
+|   |   |
+|---|---|
+|Step 1|The forwarding router fails.|
+|Step 2|The standby router stops seeing hello messages from the forwarding router.|
+|Step 3|The standby router assumes the role of the forwarding router.|
+|Step 4|The new forwarding router assumes both the IP and MAC addresses of the virtual router.|
 
-**40. In NAT terms, what address type refers to the globally routable IPv4 address of a destination host on the Internet?**
+**Explanation:** Hot Standby Router Protocol (HSRP) is a Cisco-proprietary protocol that is designed to allow for transparent failover of a first-hop IPv4 device.
 
-- **outside global**
-- inside global
-- outside local
-- inside local
+**41. Match the FHRP protocols to the appropriate description. (Not all options are used.)**
 
-**Explanation:** From the perspective of a NAT device, inside global addresses are used by external users to reach internal hosts. Inside local addresses are the addresses assigned to internal hosts. Outside global addresses are the addresses of destinations on the external network. Outside local addresses are the actual private addresses of destination hosts behind other NAT devices.
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2024-10-08_154524.jpg)
 
-**41. Refer to the exhibit. Which two statements are correct based on the output as shown in the exhibit? (Choose two.)**
+|   |   |
+|---|---|
+|HSRP|A Cisco proprietary FHRP that provides redundancy through use of an active device and standby device|
+|VRRP|An open standard FHRP that provides redundancy through use of a virtual routers master and one or more backups|
+|GLBP|A Cisco proprietary FHRP that provides load sharing in addition to redundancy|
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i215692v1n3_Q2.png)
+**42. Match the DHCP message types to the order of the DHCPv4 process. (Not all options are used.)**
 
-- **The output is the result of the show ip nat translations command.**
-- **The host with the address 209.165.200.235 will respond to requests by using a source address of 192.168.10.10.**
-- The output is the result of the show ip nat statistics command.
-- Traffic with the destination address of a public web server will be sourced from the IP of 192.168.1.10.
-- The host with the address 209.165.200.235 will respond to requests by using a source address of 209.165.200.235.
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2024-10-08_153922.jpg)
 
-**Explanation:** The output displayed in the exhibit is the result of the **show ip nat translations** command. Static NAT entries are always present in the NAT table, while dynamic entries will eventually time out.
+|   |   |
+|---|---|
+|Step 1|DHCPDISCOVER|
+|Step 2|DHCPOFFER|
+|Step 3|DHCPREQUEST|
+|Step 4|DHCPACK|
 
-**42. Which circumstance would result in an enterprise deciding to implement a corporate WAN?**
+**Explanation:** The broadcast DHCPDISCOVER message finds DHCPv4 servers on the network. When the DHCPv4 server receives a DHCPDISCOVER message, it reserves an available IPv4 address to lease to the client and sends the unicast DHCPOFFER message to the requesting client. When the client receives the DHCPOFFER from the server, it sends back a DHCPREQUEST. On receiving the DHCPREQUEST message the server replies with a unicast DHCPACK message. DHCPREPLY and DHCPINFORMATION-REQUEST are DHCPv6 messages.
 
-- when the enterprise decides to secure its corporate LAN
-- **when its employees become distributed across many branch locations**
-- when the number of employees exceeds the capacity of the LAN
-- when the network will span multiple buildings
+**43. The address pool of a DHCP server is configured with 192.168.234.0/27. The network administrator reserves 22 IP addresses for IP phones. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-**Explanation:** WANs cover a greater geographic area than LANs do, so having employees distributed across many locations would require the implementation of WAN technologies to connect those locations. Customers will access corporate web services via a public WAN that is implemented by a service provider, not by the enterprise itself. When employee numbers grow, the LAN has to expand as well. A WAN is not required unless the employees are in remote locations. LAN security is not related to the decision to implement a WAN.
+- 10
+- 0
+- **8**
+- 21
+- 18
 
-**43. What is the function of the Hashed Message Authentication Code (HMAC) algorithm in setting up an IPsec VPN?**
+**Explanation:** Calculate the maximum number of hosts available for the slash value and subtract the required static IP addresses required for the devices.  
+/24 = 254 hosts  
+/25 = 126 hosts  
+/26 = 62 hosts  
+/27 = 30 hosts  
+/28 = 14 hosts
 
-- protects IPsec keys during session negotiation
-- authenticates the IPsec peers
-- creates a secure channel for key negotiation
-- **guarantees message integrity**
+**44. A company uses DHCP servers to dynamically assign IPv4 addresses to employee workstations. The address lease duration is set as 5 days. An employee returns to the office after an absence of one week. When the employee boots the workstation, it sends a message to obtain an IP address. Which Layer 2 and Layer 3 destination addresses will the message contain?**
 
-**Explanation:** The IPsec framework uses various protocols and algorithms to provide data confidentiality, data integrity, authentication, and secure key exchange. The Hashed Message Authentication Code (HMAC) is a data integrity algorithm that uses a hash value to guarantee the integrity of a message.
+- both MAC and IPv4 addresses of the DHCP server
+- FF-FF-FF-FF-FF-FF and IPv4 address of the DHCP server
+- **FF-FF-FF-FF-FF-FF and 255.255.255.255**
+- MAC address of the DHCP server and 255.255.255.255
 
-**44. What algorithm is used with IPsec to provide data confidentiality?**
+**Explanation:**When the lease of a dynamically assigned IPv4 address has expired, a workstation will send a DHCPDISCOVER message to start the process of obtaining a valid IP address. Because the workstation does not know the addresses of DHCP servers, it sends the message via broadcast, with destination addresses of FF-FF-FF-FF-FF-FF and 255.255.255.255.
 
-- Diffie-Hellman
-- SHA
-- MD5
-- RSA
-- **AES**
+**45. Which command will allow a network administrator to check the IP address that is assigned to a particular MAC address?**
 
-**Explanation:** The IPsec framework uses various protocols and algorithms to provide data confidentiality, data integrity, authentication, and secure key exchange. Two popular algorithms that are used to ensure that data is not intercepted and modified (data integrity) are MD5 and SHA. AES is an encryption protocol and provides data confidentiality. DH (Diffie-Hellman) is an algorithm that is used for key exchange. RSA is an algorithm that is used for authentication.
+- Router# show running-config I section_dhcp
+- Router# show ip dhcp server statistics
+- **Router# show ip dhcp binding**
+- Router# show ip dhcp pool
 
-**45. Which two technologies provide enterprise-managed VPN solutions? (Choose two.)**
+**Explanation:** The `show ip dhcp binding` command will show the leases, including IP addresses, MAC addresses, lease expiration, type of lease, client ID, and user name.
 
-- **remote access VPN**
-- Frame Relay
-- Layer 2 MPLS VPN
-- **site-to-site VPN**
-- Layer 3 MPLS VPN
+**46. What is the reason that an ISP commonly assigns a DHCP address to a wireless router in a SOHO environment?**
 
-**Explanation:** VPNs can be managed and deployed as either of two types:
+- better network performance
+- better connectivity
+- **easy IP address management**
+- easy configuration on ISP firewall
 
-- **Enterprise VPNs** – Enterprise-managed VPNs are a common solution for securing enterprise traffic across the internet. Site-to-site and remote access VPNs are examples of enterprise managed VPNs.
-- **Service Provider VPNs** – Service provider managed VPNs are created and managed over the provider network. Layer 2 and Layer 3 MPLS are examples of service provider managed VPNs. Other legacy WAN solutions include Frame Relay and ATM VPNs.
-    
+**Explanation:**In a SOHO environment, a wireless router connects to the ISP via a DSL or cable modem. The IP address between the wireless router and ISP site is typically assigned by the ISP through DHCP. This method facilitates the IP addressing management in that IP addresses for clients are dynamically assigned so that if a client is dropped, the assigned IP address can be easily reassigned to another client.
 
-**46. Question as presented:**
+**47. What information can be verified through the show ip dhcp binding command?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i249830v1n1_212288-2.png)
+- **the IPv4 addresses that are assigned to hosts by the DHCP server**
+- that DHCPv4 discover messages are still being received by the DHCP server
+- the IPv4 addresses that have been excluded from the DHCPv4 pool
+- the number of IP addresses remaining in the DHCP pool
 
-**Explanation:** The inside local address is the private IP address of the source or the PC in this instance. The inside global address is the translated address of the source or the address as seen by the outside device. Since the PC is using the outside address of the R1 router, the inside global address is 192.0.2.1. The outside addressing is simply the address of the server or 203.0.113.5.
+**Explanation:**The `show ip dhcp binding` command shows a list of IPv4 addresses and the MAC addresses of the hosts to which they are assigned. Using this information an administrator can determine which host interfaces have been assigned to specific hosts.
 
-**47. Refer to the exhibit. A network administrator is viewing the output from the command show ip nat translations. Which statement correctly describes the NAT translation that is occurring on router RT2?​**
+**48. What is the result of a network technician issuing the command ip dhcp excluded-address 10.0.15.1 10.0.15.15 on a Cisco router?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i215827v4n1_215827-1.png)
+- The Cisco router will exclude only the 10.0.15.1 and 10.0.15.15 IP addresses from being leased to DHCP clients.
+- **The Cisco router will exclude 15 IP addresses from being leased to DHCP clients.**
+- The Cisco router will automatically create a DHCP pool using a /28 mask.
+- The Cisco router will allow only the specified IP addresses to be leased to clients.
 
-- **The traffic from a source IPv4 address of 192.168.254.253 is being translated to 192.0.2.88 by means of static NAT.**
-- The traffic from a source IPv4 address of 192.0.2.88 is being translated by router RT2 to reach a destination IPv4 address of 192.168.254.253.
-- The traffic from a source IPv4 public address that originates traffic on the internet would be able to reach private internal IPv4 addresses​.
-- The traffic from a source IPv4 address of 192.168.2.20 is being translated by router RT2 to reach a destination IPv4 address of 192.0.2.254.
+**Explanation:** The `ip dhcp excluded-address` command is followed by the first and the last addresses to be excluded from being leased to DHCP clients.
 
-**Explanation:** Because no outside local or outside global address is referenced, the traffic from a source IPv4 address of 192.168.254.253 is being translated to 192.0.2.88 by using static NAT. In the output from the command **show ip nat translations**, the inside local IP address of 192.168.2.20 is being translated into an outside IP address of 192.0.2.254 so that the traffic can cross the public network. A public IPv4 device can connect to the private IPv4 device 192.168.254.253 by targeting the destination IPv4 address of 192.0.2.88.
+**49. Match the descriptions to the corresponding DHCPv6 server type. (Not all options are used.)**  
+![](https://itexamanswers.net/wp-content/uploads/2019/12/2020-01-22_235504.jpg)
 
-**48. What type of address is 10.100.126.126?**
+**50. Refer to the exhibit. Based on the output that is shown, what kind of IPv6 addressing is being configured?**
 
-- **private**
-- public
+![CCNA 2 v7 Modules 7 - 9: Available and Reliable Networks Exam Answers](https://itexamanswers.net/wp-content/uploads/2019/12/CCNA-2-v7-Modules-7-9-Available-and-Reliable-Networks-Exam-Answers-50.png)
 
-**49. Which type of VPN connects using the Transport Layer Security (TLS) feature?**
+CCNA 2 v7 Modules 7 – 9: Available and Reliable Networks Exam Answers
 
-- **SSL VPN**
-- MPLS VPN
-- IPsec virtual tunnel interface
-- dynamic multipoint VPN
+- **stateless DHCPv6**
+- SLAAC
+- static link-local
+- stateful DHCPv6
 
-**Explanation:** When a client negotiates an SSL VPN connection with the VPN gateway, it connects using Transport Layer Security (TLS). TLS is the newer version of SSL and is sometimes expressed as SSL/TLS. The two terms are often used interchangeably.
+**Explanation:** Stateful DHCPv6 pools are configured with address prefixes for hosts via the `address` command, whereas stateless DHCPv6 pools typically only contain information such as DNS server addresses and the domain name. RA messages that are sent from routers that are configured as stateful DHCPv6 servers have the M flag set to 1 with the command `ipv6 nd managed-config-flag`, whereas stateless DHCPv6 servers are indicated by setting the O flag to 1 with the `ipv6 nd other-config-flag` command.
 
-**50. Which two end points can be on the other side of an ASA site-to-site VPN configured using ASDM? (Choose two.)**
+**51. Which FHRP implementation is a Cisco-proprietary protocol that suppports IPv6 load balancing?**
 
-- DSL switch
-- **ISR router**
-- **another ASA**
-- multilayer switch
-- Frame Relay switch
+- GLBP
+- **GLBP for IPv6**
+- VRRPv3
+- VRRPv2
 
-**Explanation:** ASDM supports creating an ASA site-to-site VPN between two ASAs or between an ASA and an ISR router.
+**52. Which set of commands will configure a router as a DHCP server that will assign IPv4 addresses to the 192.168.100.0/23 LAN while reserving the first 10 and the last addresses for static assignment?**
 
-**51. Which protocol creates a virtual point-to-point connection to tunnel unencrypted traffic between Cisco routers from a variety of protocols?**
+ip dhcp excluded-address 192.168.100.1 192.168.100.9  
+ip dhcp excluded-address 192.168.101.254  
+ip dhcp pool LAN-POOL-100  
+ip network 192.168.100.0 255.255.254.0  
+ip default-gateway 192.168.100.1
 
-- IKE
-- IPsec
-- OSPF
-- **GRE**
+dhcp pool LAN-POOL-100  
+ip dhcp excluded-address 192.168.100.1 192.168.100.9  
+ip dhcp excluded-address 192.168.100.254  
+network 192.168.100.0 255.255.254.0  
+default-router 192.168.101.1
 
-**Explanation:** Generic Routing Encapsulation (GRE) is a tunneling protocol developed by Cisco that encapsulates multiprotocol traffic between remote Cisco routers. GRE does not encrypt data. OSPF is a open source routing protocol. IPsec is a suite of protocols that allow for the exchange of information that can be encrypted and verified. Internet Key Exchange (IKE) is a key management standard used with IPsec.
+ip dhcp excluded-address 192.168.100.1 192.168.100.10  
+ip dhcp excluded-address 192.168.100.254  
+ip dhcp pool LAN-POOL-100  
+network 192.168.100.0 255.255.255.0  
+ip default-gateway 192.168.100.1
 
-**52. What is a disadvantage when both sides of a communication use PAT?**
+**ip dhcp excluded-address 192.168.100.1 192.168.100.10  
+ip dhcp excluded-address 192.168.101.254  
+ip dhcp pool LAN-POOL-100  
+network 192.168.100.0 255.255.254.0  
+default-router 192.168.100.1**  
 
-- **End-to-end IPv4 traceability is lost.**
-- The flexibility of connections to the Internet is reduced.
-- The security of the communication is negatively impacted.
-- Host IPv4 addressing is complicated.
+**Explanation:** The /23 prefix is equivalent to a network mask of 255.255.254.0. The network usable IPv4 address range is 192.168.100.1 to 192.168.101.254 inclusive. The commands dhcp pool, ip default-gateway, and ip network are not valid DHCP configuration commands.
 
-**Explanation:** With the use of NAT, especially PAT, end-to-end traceability is lost. This is because the host IP address in the packets during a communication is translated when it leaves and enters the network. With the use of NAT/PAT, both the flexibility of connections to the Internet and security are actually enhanced. Host IPv4 addressing is provided by DHCP and not related to NAT/PAT.
+**53. What is a result when the DHCP servers are not operational in a network?**
 
-**53. What two addresses are specified in a static NAT configuration?**
+- Workstations are assigned with the IP address 127.0.0.1.
+- Workstations are assigned with IP addresses in the 10.0.0.0/8 network.
+- **Workstations are assigned with IP addresses in the 169.254.0.0/16 network.**
+- Workstations are assigned with the IP address 0.0.0.0.
 
-- the outside global and the outside local
-- the inside local and the outside global
-- the inside global and the outside local
-- **the inside local and the inside global**
+**Explanation:** When workstations are configured with obtaining IP address automatically but DHCP servers are not available to respond to the requests, a workstation can assign itself an IP addresses from the 169.254.0.0/16 network.
 
-**54. A company is considering updating the campus WAN connection. Which two WAN options are examples of the private WAN architecture? (Choose two.)**
+**54. A company uses the method SLAAC to configure IPv6 addresses for the workstations of the employees. A network administrator configured the IPv6 address on the LAN interface of the router. The interface status is UP. However, the workstations on the LAN segment did not obtain the correct prefix and prefix length. What else should be configured on the router that is attached to the LAN segment for the workstations to obtain the information?​**
 
-- municipal Wi-Fi
-- digital subscriber line
-- **leased line**
-- **Ethernet WAN**
-- cable
+R1(config)# ipv6 dhcp pool  
+R1(config-if)# ipv6 enable  
+**R1(config)# ipv6 unicast-routing**  
+R1(config-if)# ipv6 nd other-config-flag  
 
-**Explanation:** An organization can connect to a WAN through basic two options:
+**Explanation:** A PC that is configured to use the SLAAC method obtains the IPv6 prefix and prefix length from a router. When the PC boots, it sends an RS message to inform the routers that it needs the information. A router sends an RA message that includes the required information. For a router to be able to send RA messages, it must be enabled as an IPv6 router by the unicast ipv6-routing command in global configuration mode. The other options are not used to enable IPv6 routing on a router.
 
-- **Private WAN infrastructure** – such as dedicated point-to-point leased lines, PSTN, ISDN, Ethernet WAN, ATM, or Frame Relay
-- **Public WAN infrastructure** – such as digital subscriber line (DSL), cable, satellite access, municipal Wi-Fi, WiMAX, or wireless cellular including 3G/4G
+**55. Which FHRP implementation is a nonproprietary protocol which relies on ICMP to provide IPv4 redundancy?**
 
-**55. What type of address is 128.107.240.239?**
+- VRRPv3
+- GLBP for IPv6
+- **IRDP**
+- GLBP
 
-- **Public**
-- Private
+**56. Refer to the exhibit. PC-A is unable to receive an IPv6 address from the stateful DHCPv6 server. What is the problem?**  
+![](https://itexamanswers.net/wp-content/uploads/2019/12/download.png)
 
-**56. Which type of VPN has both Layer 2 and Layer 3 implementations?**
+- **The ipv6 dhcp relay command should be applied to interface Gig0/0.**
+- The ipv6 nd managed-config-flag should be applied to interface Gig0/1.
+- The ipv6 dhcp relay command should use the link-local address of the DHCP server.
+- The ipv6 nd managed-config-flag command should be ipv6 nd other-config-flag .
 
-- IPsec virtual tunnel interface
-- dynamic multipoint VPN
-- GRE over IPsec
-- **MPLS VPN**
+**Explanation:** The **ipv6 dhcp relay** command must be applied to the interface where the clients are located. The **ipv6 dhcp relay** command can use either the link-local or global unicast address of the DHCPv6 server, or even a multicast address. The **ipv6 nd managed-config-flag** indicates to the clients that they should use stateful DHCPv6 and is also applied to the interface where the clients are located.
 
-**57. Refer to the exhibit. A network administrator has configured R2 for PAT. Why is the configuration incorrect?**
+**57. Refer to the exhibit. A network administrator is configuring a router as a DHCPv6 server. The administrator issues a show ipv6 dhcp pool command to verify the configuration. Which statement explains the reason that the number of active clients is 0?**  
+![](https://itexamanswers.net/wp-content/uploads/2016/02/i210895v1n1_210895.jpg)
 
-![](https://itexamanswers.net/wp-content/uploads/2016/02/2017-06-04_082118.png)
-
-- **NAT-POOL2 is bound to the wrong ACL**
-- The ACL does not define the list of addresses to be translated.
-- The overload keyword should not have been applied.
-- The static NAT entry is missing
+- The default gateway address is not provided in the pool.
+- No clients have communicated with the DHCPv6 server yet.
+- The IPv6 DHCP pool configuration has no IPv6 address range specified.
+- **The state is not maintained by the DHCPv6 server under stateless DHCPv6 operation.**
 
 **Explain:**  
-In the exhibit, NAT-POOL 2 is bound to ACL 100, but it should be bound to the configured ACL 1. This will cause PAT to fail. 100, but it should be bound to the configured ACL 1. This will cause PAT to fail.
+Under the stateless DHCPv6 configuration, indicated by the command ipv6 nd other-config-flag, the DHCPv6 server does not maintain the state information, because client IPv6 addresses are not managed by the DHCP server. Because the clients will configure their IPv6 addresses by combining the prefix/prefix-length and a self-generated interface ID, the ipv6 dhcp pool configuration does not need to specify the valid IPv6 address range. And because clients will use the link-local address of the router interface as the default gateway address, the default gateway address is not necessary.
 
-**58. Match each component of a WAN connection to its description. (Not all options are used.)**
+**58. Which FHRP implementation is Cisco-proprietary and permits only one router in a group to forward IPv6 packets?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/2024-10-09_154259.jpg)
+- VRRPv3
+- HSRP
+- **HSRP for IPv6**
+- VRRPv2
 
-**59. Which type of VPN allows multicast and broadcast traffic over a secure site-to-site VPN?**
+**59. Which FHRP implementation is a nonproprietary IPv4-only election protocol which has one master router per group?**
 
-- dynamic multipoint VPN
-- SSL VPN
-- IPsec virtual tunnel interface
-- **GRE over IPsec**
+- HSRP for IPv6
+- GLBP
+- **VRRPv2**
+- VRRPv3
 
-**60. Match the steps with the actions that are involved when an internal host with IP address 192.168.10.10 attempts to send a packet to and external server at the IP address 209.165.200.254 across a router R1 that running dynamic NAT. (Not all options are used.)**  
-![](https://itexamanswers.net/wp-content/uploads/2019/12/Modules-6_8-WAN-Concepts-Exam-Answers.png)  
-Place the options in the following order:
+**60. The address pool of a DHCP server is configured with 172.18.93.0/25. The network administrator reserves 10 IP addresses for web servers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-- step 5 => R1 replaces the address 192.168.10.10 with a translated inside global address.
-- step 2 => R1 checks the NAT configuration to determine if this packet should be translated.
-- step 4 => R1 selects an available global address from the dynamic address pool.
-- step 1 => The host sends packets that request a connection to the server at the address 209.165.200.254
-- step 3 => If there is no translation entry for this IP address, R1 determines that the source address 192.168.10.10 must be translated
+- 106
+- 117
+- 114
+- 120
+- **116**
 
-**Explanation:** The translation of the IP addresses from 209.65.200.254 to 192.168.10.10 will take place when the reply comes back from the server.
+**Explain:**  
+Calculate the maximum number of hosts available for the slash value and subtract the required static IP addresses required for the devices.  
+/24 = 254 hosts  
+/25 = 126 hosts  
+/26 = 62 hosts  
+/27 = 30 hosts  
+/28 = 14 hosts
 
-**61. Which type of VPN involves passenger, carrier, and transport protocols?**
+**61. The address pool of a DHCP server is configured with 10.3.2.0/24. The network administrator reserves 3 IP addresses for printers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-- **GRE over IPsec**
-- dynamic multipoint VPN
-- MPLS VPN
-- IPsec virtual tunnel interface
+- 252
+- 241
+- 255
+- 249
+- **251**
 
-**Explanation:** In a GRE over IPsec tunnel, the term passenger protocol refers to the original packet that is to be encapsulated by GRE. The carrier protocol is the protocol that encapsulates the original passenger packet. The transport protocol is the protocol that will be used to forward the packet.
+**Explain:** [**CIDR Subnet Calculator Online**](https://itexamanswers.net/ipv4-classless-inter-domain-routing-cidr-subnet-calculator-online.html)
 
-**62. Match the steps with the actions that are involved when an internal host with IP address 192.168.10.10 attempts to send a packet to an external server at the IP address 209.165.200.254 across a router R1 that is running dynamic NAT. (Not all options are used.)**
+**62. The address pool of a DHCP server is configured with 172.23.143.0/26. The network administrator reserves 14 IP addresses for file servers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-![](https://itexamanswers.net/wp-content/uploads/2019/12/2024-10-09_153330.jpg)  
+- 58
+- **48**
+- 50
+- 61
+- 40
 
-**Explanation:** The translation of the IP addresses from 209.65.200.254 to 192.168.10.10 will take place when the reply comes back from the server.
+**63. The address pool of a DHCP server is configured with 10.7.30.0/24. The network administrator reserves 5 IP addresses for printers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-**63. Refer to the exhibit. A network administrator is viewing the output from the command show ip nat translations . Which statement correctly describes the NAT translation that is occurring on router RT2?​**  
-![](https://itexamanswers.net/wp-content/uploads/2019/12/i215827v4n1_215827-2.png)
+- 253
+- 239
+- **249**
+- 250
+- 247
 
-- The traffic from a source IPv4 public address that originates traffic on the internet would be able to reach private internal IPv4 addresses​.
-- The traffic from a source IPv4 address of 192.168.2.20 is being translated by router RT2 to reach a destination IPv4 address of 192.0.2.254.
-- **The traffic from a source IPv4 address of 192.168.254.253 is being translated to 192.0.2.88 by means of static NAT.**
-- The traffic from a source IPv4 address of 192.0.2.88 is being translated by router RT2 to reach a destination IPv4 address of 192.168.254.253.
+**Explain:** Calculate the maximum number of hosts available for the slash value and subtract the required static IP addresses required for the devices.  
+/24 = 254 hosts  
+/25 = 126 hosts  
+/26 = 62 hosts  
+/27 = 30 hosts  
+/28 = 14 hosts
 
-**Explain:** Because no outside local or outside global address is referenced, the traffic from a source IPv4 address of 192.168.254.253 is being translated to 192.0.2.88 by using static NAT. In the output from the command show ip nat translations , the inside local IP address of 192.168.2.20 is being translated into an outside IP address of 192.0.2.254 so that the traffic can cross the public network. A public IPv4 device can connect to the private IPv4 device 192.168.254.253 by targeting the destination IPv4 address of 192.0.2.88.
+**64. Which FHRP implementation is a nonproprietary IPv4-only election protocol with limited scalability?**
 
-**64. What type of address is 10.131.48.7?**
+- **VRRPv2**
+- GLBP
+- GLBP for IPv6
+- IRDP
 
-- **Private**
-- Public
+**65. The address pool of a DHCP server is configured with 192.168.184.0/26. The network administrator reserves 18 IP addresses for access points. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-**65. Which type of VPN supports multiple sites by applying configurations to virtual interfaces instead of physical interfaces?**
+- 57
+- **44**
+- 54
+- 36
+- 46
 
-- dynamic multipoint VPN
-- **IPsec virtual tunnel interface**
-- MPLS VPN
-- GRE over IPsec
+**66. The address pool of a DHCP server is configured with 10.19.44.0/24. The network administrator reserves 3 IP addresses for servers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-**Explanation:** An IPsec VTI is a newer IPsec VPN technology that simplifies the configuration required to support multiple sites and remote access. IPsec VTI configurations use virtual interfaces to send and receive IP unicast and multicast encrypted traffic. Therefore, routing protocols are automatically supported without requiring configuration of GRE tunnels.
+- 255
+- 252
+- 241
+- **251**
+- 249
 
-**66. Which type of VPN involves a nonsecure tunneling protocol being encapsulated by IPsec?**
+**67. The address pool of a DHCP server is configured with 10.19.44.0/24. The network administrator reserves 6 IP addresses for servers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-- dynamic multipoint VPN
-- SSL VPN
-- IPsec virtual tunnel interface
-- **GRE over IPsec**
+- 246
+- 252
+- 249
+- **248**
+- 238
 
-**67. What type of address is 10.19.6.7?**
+**68. The address pool of a DHCP server is configured with 172.21.121.0/25. The network administrator reserves 12 IP addresses for web servers. How many IP addresses are left in the pool to be assigned to other hosts?**
 
-- **private**
-- public
+- 115
+- **114**
+- 118
+- 104
+- 112
 
-**68. What type of address is 64.101.198.197?**
+**Explanation:** Calculate the maximum number of hosts available for the slash value and subtract the required static IP addresses required for the devices.  
+/24 = 254 hosts  
+/25 = 126 hosts  
+/26 = 62 hosts  
+/27 = 30 hosts  
+/28 = 14 hosts
 
-- **public**
-- private
+**69. Which kind of message is sent by a DHCP client when its IP address lease is about to expire?​**
 
-**69. What type of address is 64.101.198.107**
-
-- **public**
-- private
-
-**70. What type of address is 10.100.34.34?**
-
-- **private**
-- public
-
-**71. What type of address is 192.168.7.126?**
-
-- **Private.**
-- Public
-
-**72. What type of address is 198.133.219.148?**
-
-- Private.
-- **Public**
-
-**73. Which two end points can be on the other side of an ASA site-to-site VPN? (Choose two.)**
-
-- DSL switch
-- **router**
-- **another ASA**
-- multilayer switch
-- Frame Relay switch
-
-**Explanation:** In a site-to-site VPN, end hosts send and receive normal unencrypted TCP/IP traffic through a VPN terminating device, typically called a VPN gateway. A VPN gateway device could be a router or a firewall. A Cisco Adaptive Security Appliance (ASA) is a standalone firewall device that combines firewall, VPN concentrator, and intrusion prevention functionality into one software image.
-
-**74. What type of address is 192.168.7.98?**
-
-- public
-- **private**
+- a DHCPREQUEST broadcast message​
+- a DHCPDISCOVER unicast message​
+- a DHCPDISCOVER broadcast message
+- a DHCPREQUEST unicast message​

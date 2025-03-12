@@ -1,9 +1,9 @@
 {
   "accentColor": "#db8433",
-  "cssTheme": "Primary",
+  "cssTheme": "Ukiyo",
   "textFontFamily": "FiraMono Nerd Font",
   "monospaceFontFamily": "FiraMono Nerd Font Mono",
-  "theme": "moonstone",
+  "theme": "obsidian",
   "baseFontSize": 16,
   "enabledCssSnippets": [
     "extended-colorschemes",
