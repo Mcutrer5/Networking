@@ -1,0 +1,1 @@
+Web Security Appliance (WSA) is a specialized hardware or software device that acts as a proxy server, protecting an organization's network and users from internet-related threats by filtering web traffic and implementing security policies
