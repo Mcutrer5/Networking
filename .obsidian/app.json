@@ -3,6 +3,6 @@
   "showLineNumber": true,
   "alwaysUpdateLinks": true,
   "spellcheck": false,
-  "readableLineLength": false,
+  "readableLineLength": true,
   "strictLineBreaks": true
 }
