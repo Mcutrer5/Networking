@@ -1,3 +1,7 @@
+---
+tags:
+  - linker-exclude
+---
 #### a. Battery Drain
 
 - **Causes:**
