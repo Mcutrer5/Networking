@@ -10,5 +10,6 @@
     "TableOfContents"
   ],
   "nativeMenus": false,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "showRibbon": true
 }
