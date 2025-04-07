@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Components/Modules/Module 11 Switch Security Concepts/11.1 Implement Port Security/11.1.1 Secure Unused Ports.md",
+                "file": "Network Components/Exams/Modules 10-13 Study Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11.1.1 Secure Unused Ports"
+              "title": "Modules 10-13 Study Guide"
             }
           }
         ]
@@ -175,8 +175,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "dec863c3fce1bd12",
+  "active": "893b0a74df60765c",
   "lastOpenFiles": [
+    "Network Implementation/Exams/Modules 9-12 Study Guide.md",
+    "Network Components/Exams/Modules 10-13 Study Guide.md",
+    "Network Components/Exams/Modules 7-8 Study Guide.md",
+    "Network Components/Modules/Module 11 Switch Security Concepts/11.1 Implement Port Security/11.1.1 Secure Unused Ports.md",
     "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.6 Configure a WLAN.md",
     "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images/13.2.6_1.png",
     "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.5 Advanced Settings.md",
@@ -216,9 +220,6 @@
     "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.7 Guidelines for Selecting a Troubleshooting Method.md",
     "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.6 Structured Troubleshooting Methods.md",
     "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.5 Troubleshooting with Layered Models.md",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.4 Gather Information.md",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.3 Question End Users.md",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.8 Data Measurement.md",
     "Network Components/Modules/Module 11 Switch Security Concepts/11.5 Mitigate STP Attacks/Images",
     "Network Components/Modules/Module 11 Switch Security Concepts/11.4 Mitigate ARP Attacks/Images",
     "Network Implementation/Modules/Module 6 NAT for IPv4/6.6 PAT/Images",
