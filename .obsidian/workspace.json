@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "76a25e4556b004d5",
+        "id": "24d340a2ec1bd4ac",
         "type": "tabs",
         "children": [
           {
-            "id": "893b0a74df60765c",
+            "id": "5c58883be7dba81d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Components/Exams/Modules 10-13 Study Guide.md",
+                "file": "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.5 Evolving Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Modules 10-13 Study Guide"
+              "title": "7.1.5 Evolving Networks"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": true
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "\"function of OSPF ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 275
+    "width": 245
   },
   "right": {
     "id": "80ff615116f264de",
@@ -166,6 +166,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -175,54 +176,53 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "893b0a74df60765c",
+  "active": "5c58883be7dba81d",
   "lastOpenFiles": [
-    "Network Implementation/Exams/Modules 9-12 Study Guide.md",
-    "Network Components/Exams/Modules 10-13 Study Guide.md",
-    "Network Components/Exams/Modules 7-8 Study Guide.md",
-    "Network Components/Modules/Module 11 Switch Security Concepts/11.1 Implement Port Security/11.1.1 Secure Unused Ports.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.6 Configure a WLAN.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images/13.2.6_1.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.5 Advanced Settings.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images/13.2.5.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.4 View AP Information.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images/13.2.4.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.3 Log in to the WLC.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images/13.2.3_2.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images/13.2.3_1.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.2 WLC Topology.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images/13.2.2.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/Images",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC/13.2.1 Video - Configure a Basic WLAN on the WLC.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.9 Port Forwarding.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/Images/13.1.9.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.8 Quality of Service.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/Images/13.1.8.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.7 NAT for IPv4.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/Images/13.1.7.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.6 Configure a Wireless Mesh Network.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/Images/13.1.6.png",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.5 Basic Wireless Setup.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.4 Basic Network Setup.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.3 Log in to the Wireless Router.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.2 The Wireless Router.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/13.1.1 Video - Configure a Wireless Network.md",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration/Images",
-    "Network Components/Modules/Module 13 WLAN Configuration/Module 13 WLAN Configuration.md",
-    "Certification Resources",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.3 Configure a WPA2 Enterprise WLAN on the WLC",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.2 Configure a Basic WLAN on the WLC",
-    "Network Components/Modules/Module 13 WLAN Configuration/13.1 Remote Site WLAN Configuration",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.3 Troubleshooting Tools/12.3.3 Hardware Troubleshooting Tools.md",
-    "Network Components/Modules/Module 13 WLAN Configuration",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.3 Troubleshooting Tools/12.3.2 Protocol Analyzers.md",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.3 Troubleshooting Tools/12.3.1 Software Troubleshooting Tools.md",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.7 Guidelines for Selecting a Troubleshooting Method.md",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.6 Structured Troubleshooting Methods.md",
-    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.2 Troubleshooting Process/12.2.5 Troubleshooting with Layered Models.md",
-    "Network Components/Modules/Module 11 Switch Security Concepts/11.5 Mitigate STP Attacks/Images",
-    "Network Components/Modules/Module 11 Switch Security Concepts/11.4 Mitigate ARP Attacks/Images",
-    "Network Implementation/Modules/Module 6 NAT for IPv4/6.6 PAT/Images",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.4 Carrier Connections.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.5 Evolving Networks.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.2 WAN Operations/Images",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.2 WAN Operations",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.5_4.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.5_3.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.5_2.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.5_1.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.4_2.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.4_1.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.3 WAN Topologies.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_5.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_4.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_3.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_2.jpg",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.2 Private and Public WANs.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.1 LANs and WANs.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/New folder",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.3 Verify OSPF Process Information.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.2 Verify OSPF Protocol Settings.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.1 OSPFv2 Reference Topology.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.4 Verify OSPF Interface Settings.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.5 Default Route Propagation/2.5.2 Verify the Propagated Default Route.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.5 Default Route Propagation/2.5.1 Propagate a Default Static Route in OSPFv2.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.9 Modify OSPFv2 Intervals.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.8 Verify Hello and Dead Intervals.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.7 Hello Packet Intervals.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.5 Test Failover to Backup Route.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.4 Manually Set OSPF Cost Value.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.3 OSPF Accumulates Cost.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.2 Adjust the Reference Bandwidth.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.1 Cisco OSPF Cost Metric.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.1 Current State of Cybersecurity/3.1.1 Current State of Affairs.md",
+    "Certification Resources/Network+/CompTIA Network+ N10-008.md",
+    "Certification Resources/Network+/Jonathan S. Weissman_ Mike Meyers - Mike Meyers' CompTIA Network+ certification passport _ (exam n10-008). (2022).pdf",
+    "Certification Resources/Network+/Emmett Dulaney - CompTIA Network_ N10-008 Exam Cram.pdf",
+    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.4 DHCP Snooping Configuration Example.md",
+    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.3 Steps to Implement DHCP Snooping.md",
+    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.2 DHCP Snooping.md",
+    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.1 DHCP Attack Review.md",
+    "Network Planning & Design/Modules/Untitled",
+    "Network Planning & Design/Modules",
+    "Network Planning & Design",
     "Untitled.canvas"
   ]
 }
