@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "24d340a2ec1bd4ac",
+        "id": "6e080d70a66eca06",
         "type": "tabs",
         "children": [
           {
-            "id": "5c58883be7dba81d",
+            "id": "d4cb87d88f5808b2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.5 Evolving Networks.md",
+                "file": "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.1 Confidentiality, Integrity, and Availability.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7.1.5 Evolving Networks"
+              "title": "3.9.1 Confidentiality, Integrity, and Availability"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "\"function of OSPF ",
+                "query": "\"must be advertised is 64.100.0.0",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245
+    "width": 228
   },
   "right": {
     "id": "80ff615116f264de",
@@ -176,10 +176,41 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5c58883be7dba81d",
+  "active": "d4cb87d88f5808b2",
   "lastOpenFiles": [
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.4 Carrier Connections.md",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.5 Evolving Networks.md",
+    "Network Implementation/Modules/Module 4 ACL Concepts/4.1 Purpose of ACLs/4.1.1 What is an ACL.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.5 DNS Tunneling.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.4 DNS Attacks.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.1 Confidentiality, Integrity, and Availability.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.2 The Defense-in-Depth Approach.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.3 Firewalls.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.3 Data Integrity.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.1 ARP Vulnerabilities.md",
+    "Windows Server/Advanced Windows Server Documentation/Documentation.md",
+    "Windows Server/Advanced Windows Server Documentation/abacus.svg",
+    "Windows Server/Advanced Windows Server Documentation/Windows_Server_logo.svg.png",
+    "Network Implementation/Network Implementation.md",
+    "Network Components/Cisco 1.png",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Windows Server/Advanced Windows Server Documentation/Windows Server Documentation.md",
+    "Windows Server/Windows Server 2019 Setup.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.8.md",
+    "Windows Server/Advanced Windows Server Documentation",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.7 DHCP Attacks.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.2 ARP Cache Poisoning.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.5 Origin Authentication.md",
+    "Network Implementation/Modules/Module 4 ACL Concepts/4.1 Purpose of ACLs/4.1.2 Packet Filtering.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.9 Diffie-Hellman.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.8 Asymmetric Encryption.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.7 Symmetric Encryption.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.4 Hash Functions.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.2 Securing Communications.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.5 Content Security Appliances.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.4 IPS.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.6 DHCP.md",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.2 Point-to-Point OSPF Networks/Images/PassiveInterface.png",
+    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.2 Point-to-Point OSPF Networks/Images/ConfigureOSPF.png",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.2 WAN Operations/Images",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.2 WAN Operations",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.5_4.jpg",
@@ -187,42 +218,11 @@
     "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.5_2.jpg",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.5_1.jpg",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.4_2.jpg",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.4_1.jpg",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.3 WAN Topologies.md",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_5.jpg",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_4.jpg",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_3.jpg",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images/7.1.3_2.jpg",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.2 Private and Public WANs.md",
-    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.1 LANs and WANs.md",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/Images",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/New folder",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.3 Verify OSPF Process Information.md",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.2 Verify OSPF Protocol Settings.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.1 OSPFv2 Reference Topology.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.6 Verify Single-Area OSPFv2/2.6.4 Verify OSPF Interface Settings.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.5 Default Route Propagation/2.5.2 Verify the Propagated Default Route.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.5 Default Route Propagation/2.5.1 Propagate a Default Static Route in OSPFv2.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.9 Modify OSPFv2 Intervals.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.8 Verify Hello and Dead Intervals.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.7 Hello Packet Intervals.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.5 Test Failover to Backup Route.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.4 Manually Set OSPF Cost Value.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.3 OSPF Accumulates Cost.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.2 Adjust the Reference Bandwidth.md",
-    "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.4 Modify Single-Area OSPFv2/2.4.1 Cisco OSPF Cost Metric.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.1 Current State of Cybersecurity/3.1.1 Current State of Affairs.md",
-    "Certification Resources/Network+/CompTIA Network+ N10-008.md",
     "Certification Resources/Network+/Jonathan S. Weissman_ Mike Meyers - Mike Meyers' CompTIA Network+ certification passport _ (exam n10-008). (2022).pdf",
     "Certification Resources/Network+/Emmett Dulaney - CompTIA Network_ N10-008 Exam Cram.pdf",
-    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.4 DHCP Snooping Configuration Example.md",
-    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.3 Steps to Implement DHCP Snooping.md",
-    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.2 DHCP Snooping.md",
-    "Network Components/Modules/Module 11 Switch Security Concepts/11.3 Mitigate DHCP Attacks/11.3.1 DHCP Attack Review.md",
-    "Network Planning & Design/Modules/Untitled",
-    "Network Planning & Design/Modules",
-    "Network Planning & Design",
     "Untitled.canvas"
   ]
 }

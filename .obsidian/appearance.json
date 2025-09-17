@@ -1,13 +1,14 @@
 {
   "accentColor": "#db8433",
-  "cssTheme": "Primary",
+  "cssTheme": "Minimal",
   "textFontFamily": "FiraMono Nerd Font",
   "monospaceFontFamily": "FiraMono Nerd Font Mono",
   "theme": "moonstone",
   "baseFontSize": 16,
   "enabledCssSnippets": [
     "extended-colorschemes",
-    "TableOfContents"
+    "TableOfContents",
+    "style"
   ],
   "nativeMenus": false,
   "baseFontSizeAction": true,

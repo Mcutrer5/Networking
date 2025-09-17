@@ -3,6 +3,12 @@
   "showLineNumber": true,
   "alwaysUpdateLinks": true,
   "spellcheck": false,
-  "readableLineLength": false,
-  "strictLineBreaks": false
+  "readableLineLength": true,
+  "strictLineBreaks": true,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
