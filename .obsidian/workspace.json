@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.1 Confidentiality, Integrity, and Availability.md",
-                "mode": "source",
+                "file": "Windows Server/Advanced Windows Server Documentation/Documentation.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.9.1 Confidentiality, Integrity, and Availability"
+              "title": "Documentation"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 228
+    "width": 288
   },
   "right": {
     "id": "80ff615116f264de",
@@ -178,37 +178,38 @@
   },
   "active": "d4cb87d88f5808b2",
   "lastOpenFiles": [
-    "Network Implementation/Modules/Module 4 ACL Concepts/4.1 Purpose of ACLs/4.1.1 What is an ACL.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.5 DNS Tunneling.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.4 DNS Attacks.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.1 Confidentiality, Integrity, and Availability.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.2 The Defense-in-Depth Approach.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.3 Firewalls.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.3 Data Integrity.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.1 ARP Vulnerabilities.md",
-    "Windows Server/Advanced Windows Server Documentation/Documentation.md",
-    "Windows Server/Advanced Windows Server Documentation/abacus.svg",
-    "Windows Server/Advanced Windows Server Documentation/Windows_Server_logo.svg.png",
-    "Network Implementation/Network Implementation.md",
-    "Network Components/Cisco 1.png",
-    "Untitled 1.base",
+    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.7 Step 3 - Determine the Baseline Duration.md",
+    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.6 Step 2 - Identify Devices and Ports of Interest.md",
+    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.5 Step 1 - Determine What Types of Data to Collect.md",
+    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.4 Establish a Network Baseline.md",
+    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.3 Network Device Documentation.md",
+    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.2 Network Topology Diagrams.md",
+    "Network Implementation/Modules/Module 12 Network Troubleshooting/12.1 Network Documentation/12.1.1 Documentation Overview.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.2 Private and Public WANs.md",
+    "Network Implementation/Modules/Module 7 WAN Concepts/7.1 Purpose of WANs/7.1.1 LANs and WANs.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.6 IP Vulnerabilities and Threats/3.6.3 ICMP Attacks.md",
+    "Network Implementation/Modules/Module 3 Network Security Concepts/3.3 Threat Actor Tools/3.3.3 Evolution of Security Tools.md",
+    "Network Implementation/Modules/Module 4 ACL Concepts/4.2 Wildcard Masks in ACLs/4.2.4 Wildcard Mask Keywords.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.3 Secure VTY Ports with a Standard IPv4 ACL/5.3.1 The access-class Command.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.2 Modify IPv4 ACLs/5.2.5 ACL Statistics.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.2 Modify IPv4 ACLs/5.2.4 Modify a Named ACL Example.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.2 Modify IPv4 ACLs/5.2.3 Sequence Numbers Method.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.2 Modify IPv4 ACLs/5.2.2 Text Editor Method.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.2 Modify IPv4 ACLs/5.2.1 Two Methods to Modify an ACL.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.6 Named Standard IPv4 ACL Example.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.5 Numbered Standard IPv4 ACL Example.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.4 Apply a Standard IPv4 ACL.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.3 Named Standard IPv4 ACL Syntax.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.2 Numbered Standard IPv4 ACL Syntax.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/5.1 Configure Standard IPv4 ACLs/5.1.1 Create an ACL.md",
+    "Network Implementation/Modules/Module 5 ACLs for IPv4 Configuration/Module 5 ACLs for IPv4 Configuration.md",
+    "Network Implementation/Modules/Module 6 NAT for IPv4/6.2 Types of NAT/6.2.1 Static NAT.md",
     "Untitled.base",
-    "Windows Server/Advanced Windows Server Documentation/Windows Server Documentation.md",
-    "Windows Server/Windows Server 2019 Setup.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.8.md",
+    "Untitled 1.base",
+    "Windows Server/Advanced Windows Server Documentation/Windows_Server_logo.svg.png",
+    "Windows Server/Advanced Windows Server Documentation/abacus.svg",
+    "Network Components/Cisco 1.png",
     "Windows Server/Advanced Windows Server Documentation",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.7 DHCP Attacks.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.2 ARP Cache Poisoning.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.5 Origin Authentication.md",
-    "Network Implementation/Modules/Module 4 ACL Concepts/4.1 Purpose of ACLs/4.1.2 Packet Filtering.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.9 Diffie-Hellman.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.8 Asymmetric Encryption.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.7 Symmetric Encryption.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.4 Hash Functions.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.10 Cryptography/3.10.2 Securing Communications.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.5 Content Security Appliances.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.9 Network Security Best Practices/3.9.4 IPS.md",
-    "Network Implementation/Modules/Module 3 Network Security Concepts/3.8 IP Services/3.8.6 DHCP.md",
     "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.2 Point-to-Point OSPF Networks/Images/PassiveInterface.png",
     "Network Implementation/Modules/Module 2 Single-Area OSPFv2 Configuration/2.2 Point-to-Point OSPF Networks/Images/ConfigureOSPF.png",
     "Network Implementation/Modules/Module 7 WAN Concepts/7.2 WAN Operations/Images",
