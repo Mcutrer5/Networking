@@ -3,7 +3,7 @@
   "showLineNumber": true,
   "alwaysUpdateLinks": true,
   "spellcheck": false,
-  "readableLineLength": true,
+  "readableLineLength": false,
   "strictLineBreaks": true,
   "pdfExportSettings": {
     "pageSize": "Letter",

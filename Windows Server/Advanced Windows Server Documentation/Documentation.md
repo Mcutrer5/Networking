@@ -21,6 +21,22 @@
 	                [TODO]
 	            </th>
 			</tr>
+			<tr style="border-radius:4px;">
+                <th style="border: 1px solid #fff; background:#2b579a; color: white; padding:4px; text-align:left; width: 40%;">
+					Computer Name
+	            </th>
+                <th style="border: 1px solid #fff; padding:4px; background: #ccc; text-align:left; width: 60%;">
+					ISTLAB-06B
+	            </th>
+            </tr>
+            <tr style="border-radius:4px;">
+                <th style="border: 1px solid #fff; background:#2b579a; color: white; padding:4px; text-align:left; width: 40%;">
+					Password
+	            </th>
+                <th style="border: 1px solid #fff; padding:4px; background: #ccc; text-align:left; width: 60%;">
+					Ist2025!
+	            </th>
+            </tr>
         </tbody>
     </table>
 </div>
@@ -166,7 +182,7 @@
 		            Allow Connections
 	            </th>
                 <th style="border: 1px solid #fff; background: #ccc; padding:4px; text-align:left; width: 60%">
-					False
+					True
 	            </th>
             </tr>
         </tbody>
